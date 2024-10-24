@@ -6,7 +6,7 @@ function App() {
     <div className="App">
       <div className="w-full h-20" style={{ borderBottom: "1px solid #ffffff6e" }}>
         <div className="container h-full flex justify-between items-center">
-          <img className="h-16" src="https://vietnamdaysabroad.mofa.gov.vn/wp-content/uploads/2023/01/vietnamday-abroad-logo.png" />
+          <img className="h-16" src="./images/logo.png" />
           <div className="flex font-bold gap-6 items-center" style={{ fontSize: 15 }}>
             <a className="text-sm" href="#">
               Trang chủ
@@ -25,7 +25,7 @@ function App() {
         </div>
       </div>
       <div>
-        <img className="w-full" src="https://vietnamdaysabroad.mofa.gov.vn/wp-content/uploads/2023/09/cover-web-khong-logo.jpg"></img>
+        <img className="w-full" src="./images/banner.jpg"></img>
       </div>
       <div className=" mt-20 pb-16" style={{ borderBottom: "1px solid #dfdfdf" }}>
         <div className="container">
@@ -75,7 +75,7 @@ function App() {
             Đơn vị tổ chức
           </p>
           <div className="text-center mt-6">
-            <img className="mx-auto" src="https://vietnamdaysabroad.mofa.gov.vn/wp-content/uploads/2022/09/222px-Emblem_of_North_Vietnam.svg_-150x150.png" />
+            <img className="mx-auto" src="./images/logo-bongoaigiao.png" />
             <p className="uppercase mt-3">Bộ Ngoại Giao</p>
           </div>
           <div className="flex items-center gap-10 mt-6">
@@ -84,16 +84,16 @@ function App() {
             <div style={{ flex: 1, borderBottom: "1px solid #dfdfdf" }}></div>
           </div>
           <div className="flex justify-center gap-10">
-            <img className="h-24" src="https://vietnamdaysabroad.mofa.gov.vn/wp-content/uploads/2023/09/logo-01.png" />
-            <img className="h-24" src="https://vietnamdaysabroad.mofa.gov.vn/wp-content/uploads/2023/09/logo-02.png" />
-            <img className="h-24" src="https://vietnamdaysabroad.mofa.gov.vn/wp-content/uploads/2023/09/logo-03.png" />
+            <img className="h-24" src="./images/logo-01.png" />
+            <img className="h-24" src="./images/logo-02.png" />
+            <img className="h-24" src="./images/logo-03.png" />
           </div>
         </div>
       </div>
       <div className="mt-10 pb-16 pt-16 text-white" style={{ background: "#151748" }}>
         <div className="container">
           <div className="flex items-center  gap-10 pb-10" style={{ borderBottom: "1px solid #454545" }}>
-            <img className="h-24" src="https://vietnamdaysabroad.mofa.gov.vn/wp-content/uploads/2023/01/vietnamday-abroad-logo.png" />
+            <img className="h-24" src="./images/logo.png" />
             <div>
               <p className="mt-2">Vui lòng liên lạc để biết thêm thông tin: Vụ Ngoại giao Văn hóa và UNESCO - Bộ ngoại giao Việt Nam</p>
               <p className="mt-2">Phone: (024) 3799 5306</p>
