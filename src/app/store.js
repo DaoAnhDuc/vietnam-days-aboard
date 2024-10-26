@@ -1,8 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import { newsSlice } from './newsSlice';
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    news: newsSlice,
   },
+  middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware({
+      serializableCheck: false, // Tắt kiểm tra tuần tự hóa (không khuyến khích)
+    }),
 });

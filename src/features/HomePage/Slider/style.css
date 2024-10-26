@@ -1,0 +1,11 @@
+#slider-news .swiper-pagination-bullet.swiper-pagination-bullet-active{
+    width: 30px;
+    height: 6px;
+    border-radius: 2px;
+    background: #d1010a;
+}
+#slider-news .swiper-pagination-bullet{
+    width: 20px;
+    height: 6px;
+    border-radius: 2px;
+}
