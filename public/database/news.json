@@ -1,29 +1,70 @@
 [
-    {
-        "title": "Trải nghiệm Tết Việt tại “Ngày tìm hiểu Việt Nam 2024”",
-        "description": "Sáng ngày 3/2, Chương trình “Ngày tìm hiểu Việt Nam” được tổ chức tại đường...",
-        "template": "template/new_1.html",
-        "create": "11 Tháng Mười Hai, 2023",
-        "createBy": "Admin"
-    },
-    {
-        "title": "“Vietnam Days Abroad 2023” promotes country to international friends",
-        "description": "“Vietnam Days Abroad 2023” successfully promoted Vietnam’s image, people, and country to international friends, fostering friendship..."
-    },
-    {
-        "title": "“NGÀY VIỆT NAM Ở NƯỚC NGOÀI 2023”: LAN TỎA VĂN HÓA VIỆT TRÊN QUY MÔ TOÀN CẦU",
-        "description": "Năm 2023, chuỗi sự kiện “Ngày Việt Nam ở nước ngoài” đã diễn ra thành..."
-    },
-    {
-        "title": "Thăng hoa chương trình nghệ thuật kỷ niệm 50 năm thiết lập quan hệ ngoại giao Việt Nam – Nhật Bản",
-        "description": "Vào tối 30/11, trong khuôn khổ Chương trình “Ngày Việt Nam tại Nhật Bản 2023”,..."
-    },
-    {
-        "title": "Người dân Nhật ấn tượng với “Ngày Việt Nam tại Nhật Bản 2023”",
-        "description": "Không gian văn hóa đậm đà bản sắc và chương trình biểu diễn nghệ thuật..."
-    },
-    {
-        "title": "Ngày Việt Nam tại Nhật Bản 2023: Tôn vinh tình hữu nghị và văn hóa Việt",
-        "description": "Tổ chức vào ngày 30/11 tại tỉnh Fukuoka, chương trình “Ngày Việt Nam tại Nhật..."
-    }
+  {
+    "title": "Trải nghiệm Tết Việt tại “Ngày tìm hiểu Việt Nam 2024”",
+    "description": "Sáng ngày 3/2, Chương trình “Ngày tìm hiểu Việt Nam” được tổ chức tại đường...",
+    "template": "template/new_1.html",
+    "create": "11 Tháng Mười Hai, 2023",
+    "createBy": "Admin"
+  },
+  {
+    "title": "“Vietnam Days Abroad 2023” promotes country to international friends",
+    "description": "“Vietnam Days Abroad 2023” successfully promoted Vietnam’s image, people, and country to international friends, fostering friendship..."
+  },
+  {
+    "title": "“NGÀY VIỆT NAM Ở NƯỚC NGOÀI 2023”: LAN TỎA VĂN HÓA VIỆT TRÊN QUY MÔ TOÀN CẦU",
+    "description": "Năm 2023, chuỗi sự kiện “Ngày Việt Nam ở nước ngoài” đã diễn ra thành..."
+  },
+  {
+    "title": "Thăng hoa chương trình nghệ thuật kỷ niệm 50 năm thiết lập quan hệ ngoại giao Việt Nam – Nhật Bản",
+    "description": "Vào tối 30/11, trong khuôn khổ Chương trình “Ngày Việt Nam tại Nhật Bản 2023”,...",
+    "template": "template/new_4.html",
+    "create": "4 Tháng Mười Hai, 2023",
+    "createBy": "Admin"
+  },
+  {
+    "title": "Người dân Nhật ấn tượng với “Ngày Việt Nam tại Nhật Bản 2023”",
+    "description": "Không gian văn hóa đậm đà bản sắc và chương trình biểu diễn nghệ thuật...",
+    "template": "template/new_5.html",
+    "create": "3 Tháng Mười Hai, 2023",
+    "createBy": "Admin"
+  },
+  {
+    "title": "Ngày Việt Nam tại Nhật Bản 2023: Tôn vinh tình hữu nghị và văn hóa Việt",
+    "description": "Tổ chức vào ngày 30/11 tại tỉnh Fukuoka, chương trình “Ngày Việt Nam tại Nhật...",
+    "template": "template/new_6.html",
+    "create": "2 Tháng Mười Hai, 2023",
+    "createBy": "Admin"
+  },
+  {
+    "title": "Tinh hoa văn hóa Việt tỏa sáng tại Nhật Bản",
+    "description": "Ngày 30/11, Đại học Y khoa Kyushu, tỉnh Fukuoka, Nhật Bản trở nên rộn ràng, tràn ngập sắc màu văn hóa với Chương trình “Ngày Việt Nam tại Nhật Bản 2023”. Do Bộ Ngoại giao Việt Nam tổ chức, chương…",
+    "template": "template/new_7.html",
+    "create": "2 Tháng Mười Hai, 2023",
+    "createBy": "Admin",
+    "link": "https://vietnamdaysabroad.mofa.gov.vn/tinh-hoa-van-hoa-viet-toa-sang-tai-nhat-ban/"
+  },
+  {
+    "title": "NGÀY VIỆT NAM TẠI NHẬT BẢN 2023",
+    "description": "Thời gian: 30/11 Địa điểm: Hội trường trung tâm Đại học Y khoa Kyushu, Fukuoka, Nhật Bản Lịch trình sự kiện: – 9h30 – 20h00: KHÔNG GIAN VĂN HÓA + Triển lãm ảnh quan hệ Việt Nam – Nhật Bản…",
+    "template": "template/new_8.html",
+    "create": "25 Tháng Mười Một, 2023",
+    "createBy": "Admin",
+    "link": "https://vietnamdaysabroad.mofa.gov.vn/ngay-viet-nam-tai-nhat-ban-2023/"
+  },
+  {
+    "title": "PRESS RELEASE",
+    "description": "“Viet Nam Day in Japan 2023” Celebrates a Half-Century Friendship Scheduled for November 30th in Fukuoka City, “Viet Nam Day in Japan 2023” will feature a variety of innovative and creative content, to commemorate the friendship between the two nations…",
+    "template": "template/new_9.html",
+    "create": "25 Tháng Mười Một, 2023",
+    "createBy": "Admin",
+    "link": "https://vietnamdaysabroad.mofa.gov.vn/press-release/"
+  },
+  {
+    "title": "THÔNG CÁO BÁO CHÍ",
+    "description": "“Ngày Việt Nam tại Nhật Bản 2023” tôn vinh tình hữu nghị trải dài nửa thế kỷ Được tổ chức vào ngày 30/11 tại tỉnh Fukuoka, Chương trình “Ngày Việt Nam tại Nhật Bản 2023” mang đến nhiều nội dung…",
+    "template": "template/new_10.html",
+    "create": "25 Tháng Mười Một, 2023",
+    "createBy": "Admin",
+    "link": "https://vietnamdaysabroad.mofa.gov.vn/thong-cao-bao-chi/"
+  }
 ]

@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Header from "../HomePage/Header/Header";
 import { Link, useNavigate } from "react-router-dom";
-import { slugify } from "../../App";
+import { getNews, slugify } from "../../App";
 
 function NewsPage() {
   const [active, setActive] = useState(0);
@@ -28,32 +28,18 @@ function NewsPage() {
       total: 5,
     },
   ];
-  const data = [
-    {
-      title: `Trải nghiệm Tết Việt tại “Ngày tìm hiểu Việt Nam 2024”`,
-      description: `Sáng ngày 3/2, Chương trình “Ngày tìm hiểu Việt Nam” được tổ chức tại đường...`,
-    },
-    {
-      title: `“Vietnam Days Abroad 2023” promotes country to international friends`,
-      description: `“Vietnam Days Abroad 2023” successfully promoted Vietnam’s image, people, and country to international friends, fostering friendship...`,
-    },
-    {
-      title: `“NGÀY VIỆT NAM Ở NƯỚC NGOÀI 2023”: LAN TỎA VĂN HÓA VIỆT TRÊN QUY MÔ TOÀN CẦU`,
-      description: `Năm 2023, chuỗi sự kiện “Ngày Việt Nam ở nước ngoài” đã diễn ra thành...`,
-    },
-    {
-      title: `Thăng hoa chương trình nghệ thuật kỷ niệm 50 năm thiết lập quan hệ ngoại giao Việt Nam – Nhật Bản`,
-      description: `Vào tối 30/11, trong khuôn khổ Chương trình “Ngày Việt Nam tại Nhật Bản 2023”,...`,
-    },
-    {
-      title: `Người dân Nhật ấn tượng với “Ngày Việt Nam tại Nhật Bản 2023”`,
-      description: `Không gian văn hóa đậm đà bản sắc và chương trình biểu diễn nghệ thuật...`,
-    },
-    {
-      title: `Ngày Việt Nam tại Nhật Bản 2023: Tôn vinh tình hữu nghị và văn hóa Việt`,
-      description: `Tổ chức vào ngày 30/11 tại tỉnh Fukuoka, chương trình “Ngày Việt Nam tại Nhật...`,
-    },
-  ];
+  const [data, setData] = useState([]);
+  useEffect(() => {
+    getData();
+    return () => {};
+  }, []);
+
+  const getData = async () => {
+    try {
+      const data = await getNews();
+      setData(data);
+    } catch (error) {}
+  };
 
   return (
     <div style={{ background: "#f5f5f5" }}>
@@ -90,10 +76,7 @@ function NewsPage() {
               <div className="flex flex-col cursor-pointer" onClick={() => navigate(`/tin-tuc/${slugify(item.title)}`)} style={{ boxShadow: "0px 5px 20px 5px rgba(0, 0, 0, 0.1)", padding: "20px", paddingBottom: 10 }}>
                 <div style={{ flex: 1 }}>
                   <Link to={`/tin-tuc/${slugify(item.title)}`}>
-                    <img
-                      className="w-full h-52 object-cover"
-                      src="https://image-en.nhandan.vn/500x282/Uploaded/2024/wpvslysmtys/2024_10_23/23-10-vna-potal-tong-bi-thu-to-lam-va-chu-tich-nuoc-luong-cuong-ban-giao-cong-tac-cua-chu-tich-nuoc-7663900-9897-8923.jpg"
-                    />
+                    <img className="w-full h-52 object-cover" src="/images/default.png" />
                     <div className="flex items-center gap-2 mt-2">
                       <img className="h-6" src="./images/clock.png" alt="" />
                       <span style={{ fontFamily: "Roboto" }} className="text-sm mt-2">

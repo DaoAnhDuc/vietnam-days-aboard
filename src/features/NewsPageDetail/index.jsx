@@ -44,7 +44,7 @@ function NewsPageDetail() {
                   {data.create} - <span className="font-bold text-red-600 text-lg">{data.createBy}</span>
                 </span>
               </div>
-              <div dangerouslySetInnerHTML={{ __html: data.details }} className="text-justify mt-6 text-black"></div>
+              <div id="wrapper-news-template" dangerouslySetInnerHTML={{ __html: data.details }} className="text-justify mt-6 text-black"></div>
             </div>
           </>
         )}
