@@ -25,16 +25,27 @@ function NewsPageDetail() {
   };
 
   return (
-    <div className="pb-20">
+    <div className="">
       <Header />
-      <div style={{maxWidth: 680, margin: '0 auto'}}>
-        {!data && <div className="text-xl font-bold mt-20 text-center text-red-600">Tin tức không tồn tại</div>}
+        {!data && (
+          <div className="flex flex-col items-center justify-center bg-gradient-to-br from-red-500 to-red-800 text-white" style={{ height: "calc(100vh - 80px)" }}>
+            <h1 className="text-9xl font-bold mb-4 animate-bounce">404</h1>
+            <h2 className="text-3xl font-semibold mb-2">Oops! Trang không tìm thấy.</h2>
+            <p className="text-lg mb-8 text-center max-w-md">Xin lỗi, trang bạn đang tìm kiếm không tồn tại hoặc đã bị di chuyển. Hãy quay lại trang chủ và thử lại.</p>
+            <Link to="/" className="px-8 py-3 bg-white text-red-700 font-semibold rounded-lg shadow-lg hover:bg-gray-200 transition duration-300">
+              Trở về trang chủ
+            </Link>
+          </div>
+        )}
+      <div style={{ maxWidth: 680, margin: "0 auto" }}>
         {data && (
           <>
             <div className="mt-8">
               <Link to={"/"}>Trang chủ</Link>
               <span className="mx-2">/</span>
-              <Link to={"/tin-tuc"} className="text-red-600 font-bold">Tin tức</Link>
+              <Link to={"/tin-tuc"} className="text-red-600 font-bold">
+                Tin tức
+              </Link>
             </div>
             <div className="mt-4">
               <p className="text-3xl font-bold mb-2">{data.title}</p>
@@ -44,7 +55,7 @@ function NewsPageDetail() {
                   {data.create} - <span className="font-bold text-red-600 text-lg">{data.createBy}</span>
                 </span>
               </div>
-              <div id="wrapper-news-template" dangerouslySetInnerHTML={{ __html: data.details }} className="text-justify mt-6 text-black"></div>
+              <div id="wrapper-news-template" dangerouslySetInnerHTML={{ __html: data.details }} className="text-justify mt-6 text-black pb-20"></div>
             </div>
           </>
         )}

@@ -76,7 +76,7 @@ function NewsPage() {
               <div className="flex flex-col cursor-pointer" onClick={() => navigate(`/tin-tuc/${slugify(item.title)}`)} style={{ boxShadow: "0px 5px 20px 5px rgba(0, 0, 0, 0.1)", padding: "20px", paddingBottom: 10 }}>
                 <div style={{ flex: 1 }}>
                   <Link to={`/tin-tuc/${slugify(item.title)}`}>
-                    <img className="w-full h-52 object-cover" src="/images/default.png" />
+                    {/* <img className="w-full h-52 object-cover" src="/images/default.png" /> */}
                     <div className="flex items-center gap-2 mt-2">
                       <img className="h-6" src="./images/clock.png" alt="" />
                       <span style={{ fontFamily: "Roboto" }} className="text-sm mt-2">

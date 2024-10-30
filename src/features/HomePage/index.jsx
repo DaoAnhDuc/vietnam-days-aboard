@@ -19,7 +19,7 @@ function HomePage() {
     <div>
       <Header />
       <div>
-        <img className="w-full" src="./images/banner.jpg"></img>
+        <img className="w-full" src="./images/banner2024.png"></img>
       </div>
       <div className=" mt-20 pb-16" style={{ borderBottom: "1px solid #dfdfdf" }}>
         <div className="container">
