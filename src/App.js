@@ -3,6 +3,7 @@ import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import HomePage from "./features/HomePage/index";
 import NewsPage from "./features/NewsPage/index";
 import NewsPageDetail from "./features/NewsPageDetail";
+import NewsPagePro from "./features/NewsPagePro";
 import axios from "axios";
 import "./App.css";
 export function slugify(text) {
@@ -28,6 +29,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/tin-tuc" element={<NewsPage />} />
           <Route path="/tin-tuc/:newsId" element={<NewsPageDetail />} /> {/* Route động */}
+          <Route path="*" element={<NewsPagePro />} />
         </Routes>
       </Router>
     </div>

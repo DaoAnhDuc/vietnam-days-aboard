@@ -25,7 +25,7 @@ function NewsPageDetail() {
   };
 
   return (
-    <div className="pb-40">
+    <div className="pb-20">
       <Header />
       <div style={{maxWidth: 680, margin: '0 auto'}}>
         {!data && <div className="text-xl font-bold mt-20 text-center text-red-600">Tin tức không tồn tại</div>}

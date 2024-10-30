@@ -1,0 +1,38 @@
+[
+  {
+    "year": 2021,
+    "news": [
+      {
+        "slug": "ngay-viet-nam-o-thuy-si",
+        "title": "Ngày Việt Nam ở Thuỵ Sĩ",
+        "banner": "banner_vi-scaled.png"
+      }
+    ]
+  },
+  {
+    "year": 2022,
+    "news": [
+      {
+        "slug": "ngay-viet-nam-o-ao",
+        "title": "Ngày Việt Nam ở Áo"
+      },
+      {
+        "slug": "ngay-viet-nam-o-an-do",
+        "title": "Ngày Việt Nam ở Ấn Độ"
+      },
+      {
+        "slug": "ngay-viet-nam-o-han-quoc",
+        "title": "Ngày Việt Nam ở Hàn Quốc"
+      }
+    ]
+  },
+  {
+    "year": 2023,
+    "news": [
+      {
+        "slug": "ngay-viet-nam-o-nam-phi",
+        "title": "Ngày Việt Nam ở Nam Phi"
+      }
+    ]
+  }
+]
