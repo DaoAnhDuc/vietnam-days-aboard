@@ -7,12 +7,18 @@
         "createBy": "Admin"
     },
     {
-        "title": "“Vietnam Days Abroad 2023” promotes country to international friends",
-        "description": "“Vietnam Days Abroad 2023” successfully promoted Vietnam’s image, people, and country to international friends, fostering friendship..."
+      "title": "“Vietnam Days Abroad 2023” promotes country to international friends",
+      "description": "“Vietnam Days Abroad 2023” successfully promoted Vietnam’s image, people, and country to international friends, fostering friendship...",
+      "template": "template/new_2.html",
+      "create": "11 Tháng Mười Hai, 2023",
+      "createBy": "Admin"
     },
     {
-        "title": "“NGÀY VIỆT NAM Ở NƯỚC NGOÀI 2023”: LAN TỎA VĂN HÓA VIỆT TRÊN QUY MÔ TOÀN CẦU",
-        "description": "Năm 2023, chuỗi sự kiện “Ngày Việt Nam ở nước ngoài” đã diễn ra thành..."
+      "title": "“NGÀY VIỆT NAM Ở NƯỚC NGOÀI 2023”: LAN TỎA VĂN HÓA VIỆT TRÊN QUY MÔ TOÀN CẦU",
+      "description": "Năm 2023, chuỗi sự kiện “Ngày Việt Nam ở nước ngoài” đã diễn ra thành...",
+      "template": "template/new_3.html",
+      "create": "8 Tháng Mười Hai, 2023",
+      "createBy": "Admin"
     },
     {
         "title": "Thăng hoa chương trình nghệ thuật kỷ niệm 50 năm thiết lập quan hệ ngoại giao Việt Nam – Nhật Bản",
