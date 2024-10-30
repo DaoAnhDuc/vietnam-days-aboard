@@ -14,7 +14,7 @@ function Header() {
               Trang chủ
             </Link>
             <a className="text-sm">Ngày Việt Nam ở nước ngoài</a>
-            <Link to={"tin-tuc"} className="text-sm">
+            <Link to={"/tin-tuc"} className="text-sm">
               Tin tức
             </Link>
             <a className="text-sm">Liên Hệ</a>
@@ -38,15 +38,15 @@ function Header() {
         }`}
         style={{ boxShadow: "0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)", borderTop: "1px solid rgba(0,0,0,0.24)" }}
       >
-        <a className="block lg:inline-block text-sm px-4 py-4 hover:bg-gray-300" href="#">
+        <Link to={"/"} className="block lg:inline-block text-sm px-4 py-4 hover:bg-gray-300" href="#">
           Trang chủ
-        </a>
+        </Link>
         <a className="block lg:inline-block text-sm px-4 py-4 hover:bg-gray-300" href="#">
           Ngày Việt Nam ở nước ngoài
         </a>
-        <a className="block lg:inline-block text-sm px-4 py-4 hover:bg-gray-300" href="#">
+        <Link to={'/tin-tuc'} className="block lg:inline-block text-sm px-4 py-4 hover:bg-gray-300" href="#">
           Tin tức
-        </a>
+        </Link>
         <a className="block lg:inline-block text-sm px-4 py-4 hover:bg-gray-300" href="#">
           Liên Hệ
         </a>

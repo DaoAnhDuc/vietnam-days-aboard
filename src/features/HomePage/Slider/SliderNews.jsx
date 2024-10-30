@@ -28,10 +28,7 @@ function SliderNews({ data }) {
           <SwiperSlide key={index}>
             <Link to={`tin-tuc/${slugify(item.title)}`}>
               <div className="" style={{ boxShadow: "0px 5px 20px 5px rgba(0, 0, 0, 0.1)" }}>
-                <img
-                  className="w-full h-52 object-cover"
-                  src="https://image-en.nhandan.vn/500x282/Uploaded/2024/wpvslysmtys/2024_10_23/23-10-vna-potal-tong-bi-thu-to-lam-va-chu-tich-nuoc-luong-cuong-ban-giao-cong-tac-cua-chu-tich-nuoc-7663900-9897-8923.jpg"
-                />
+                <img className="w-full h-52 object-cover" src="/images/default.png" />
                 <div className="p-5 h-48">
                   <p className="line-clamp-3 text-black font-bold text-xl">{item.title}</p>
                   <p className="line-clamp-3 text-sm mt-2">{item.description}</p>
