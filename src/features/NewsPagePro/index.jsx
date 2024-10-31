@@ -2,14 +2,16 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import Header from "../HomePage/Header/Header";
 import { Link } from "react-router-dom";
+import NgayVietNamOThuySi from "./NgayVietNamOThuySi";
 
 function NewPagePro() {
   const [news, setNews] = useState(null);
   const [loading, setLoading] = useState(true);
+
   useEffect(() => {
     getData();
     return () => {};
-  }, []);
+  }, [news]);
 
   const getData = async () => {
     const response = await axios.get(`/database/vietnamdaysaboard.json`);
@@ -25,8 +27,7 @@ function NewPagePro() {
     setNews(data);
     setLoading(false);
   };
-  console.log(news);
-
+  
   return (
     <div>
       <Header />
@@ -40,6 +41,7 @@ function NewPagePro() {
           </Link>
         </div>
       )}
+      {news && news.slug === "ngay-viet-nam-o-thuy-si" && <NgayVietNamOThuySi />}
     </div>
   );
 }
