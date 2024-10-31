@@ -1,6 +1,5 @@
-import { useEffect, useRef, useState } from "react";
 import "lightgallery/css/lightgallery.css";
-import lightGallery from "lightgallery";
+import { useEffect, useRef, useState } from "react";
 import Footer from "../HomePage/Footer/Footer";
 export const useResize = () => {
   const [size, setSize] = useState({ width: 0, height: 0 });

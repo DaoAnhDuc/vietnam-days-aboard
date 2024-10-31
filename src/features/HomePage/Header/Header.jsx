@@ -1,7 +1,8 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 function Header() {
+  const location = useLocation()
   const [open, setOpen] = useState(false);
   const [dropdownMenu, setDropdownMenu] = useState([]);
   const [hover, setHover] = useState(false);
@@ -12,6 +13,11 @@ function Header() {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+
+  useEffect(() => {
+    handleResize()
+    return () => {};
+  }, [location]);
 
   const handleResize = () => {
     setOpen(false);
