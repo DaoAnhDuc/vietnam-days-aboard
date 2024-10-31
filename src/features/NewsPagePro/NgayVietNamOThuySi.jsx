@@ -211,7 +211,7 @@ function NgayVietNamOThuySi() {
         <p className="text-center font-bold text-xl mb-6">09/10/2021 - Từ 15:00 (GMT+7)</p>
         <div className="flex flex-col gap-5">
           {timeline.map((i) => (
-            <div key={i.title} style={{ width: 836, margin: "auto" }}>
+            <div key={i.title} style={{ width: 836, margin: "auto", maxWidth: "100%" }}>
               <div
                 onClick={() => {
                   if (i.show) {
