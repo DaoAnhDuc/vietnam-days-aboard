@@ -19,7 +19,6 @@ function NewPagePro() {
 
   const getData = async () => {
     const response = await axios.get(`/database/vietnamdaysaboard.json`);
-    console.log(window.location.pathname);
     let data = null;
     response.data.forEach((item) => {
       item.news.forEach((i) => {
@@ -28,10 +27,11 @@ function NewPagePro() {
         }
       });
     });
+    document.title = data?.title;
     setNews(data);
     setLoading(false);
   };
-  
+
   return (
     <div>
       <Header />

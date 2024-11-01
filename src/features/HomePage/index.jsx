@@ -12,6 +12,7 @@ function HomePage() {
   }, []);
 
   const getData = async () => {
+    document.title = "Vietnam days aboard";
     const data = await getNews();
     setNews(data);
   };

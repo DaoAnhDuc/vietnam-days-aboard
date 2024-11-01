@@ -16,6 +16,10 @@ function Header() {
 
   useEffect(() => {
     handleResize()
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // for smooth scrolling
+    });
     return () => {};
   }, [location]);
 

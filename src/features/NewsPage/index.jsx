@@ -37,6 +37,7 @@ function NewsPage() {
   const getData = async () => {
     try {
       const data = await getNews();
+      document.title = "Tin tức";
       setData(data);
     } catch (error) { }
   };

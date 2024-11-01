@@ -19,6 +19,7 @@ function NewsPageDetail() {
       const data = await getNews();
       const newsData = data.find((i) => slugify(i.title) === newsId);
       const response = await axios.get(`/${newsData.template}`);
+      document.title = newsData?.title
       setLoading(false);
       setData({
         ...newsData,
@@ -53,7 +54,7 @@ function NewsPageDetail() {
               </Link>
             </div>
             <div className="mt-4">
-              <p className="text-3xl font-bold mb-2">{data.title}</p>
+              <p className="text-3xl font-bold mb-2">{data?.title}</p>
               <div className="flex items-center gap-2 mt-4">
                 <img className="h-6" src="/images/clock.png" alt="" />
                 <span style={{ fontFamily: "Roboto" }} className="text-sm mt-1">
