@@ -30,7 +30,7 @@ function NewsPageDetail() {
   };
 
   return (
-    <div className="">
+    <div>
       <Header />
       {!data && !loading && (
         <div className="flex flex-col items-center justify-center bg-gradient-to-br from-red-500 to-red-800 text-white" style={{ height: "calc(100vh - 80px)" }}>
@@ -42,7 +42,7 @@ function NewsPageDetail() {
           </Link>
         </div>
       )}
-      <div style={{ maxWidth: 680, margin: "0 auto" }}>
+      <div className="min-h-screen" style={{ maxWidth: 680, margin: "0 auto" }}>
         {data && (
           <>
             <div className="mt-8">
@@ -65,7 +65,7 @@ function NewsPageDetail() {
           </>
         )}
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
