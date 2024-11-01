@@ -84,7 +84,7 @@ function NewsPage() {
                     <div className="flex items-center gap-2 mt-2">
                       <img className="h-6" src="/images/clock.png" alt="" />
                       <span style={{ fontFamily: "Roboto" }} className="text-sm mt-2">
-                        5 Tháng Hai, 2024
+                        {item.create}
                       </span>
                     </div>
                     <p className="font-bold text-xl mt-2">{item.title}</p>
