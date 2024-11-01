@@ -5,7 +5,7 @@ function Footer() {
     <div className="mt-10 pb-16 pt-16 text-white" style={{ background: "#151748" }}>
       <div className="container">
         <div className="flex items-center flex-wrap gap-10 pb-10" style={{ borderBottom: "1px solid #454545" }}>
-          <img className="h-24" src="./images/logo.png" />
+          <img className="h-24" src="/images/logo.png" />
           <div>
             <p className="mt-2">Vui lòng liên lạc để biết thêm thông tin: Vụ Ngoại giao Văn hóa và UNESCO - Bộ ngoại giao Việt Nam</p>
             <p className="mt-2">Phone: (024) 3799 5306</p>

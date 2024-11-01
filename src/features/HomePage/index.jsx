@@ -20,7 +20,7 @@ function HomePage() {
     <div>
       <Header />
       <div>
-        <img className="w-full" src="./images/banner2024.png"></img>
+        <img className="w-full" src="/images/banner2024.png"></img>
       </div>
       <div className=" mt-20 pb-16" style={{ borderBottom: "1px solid #dfdfdf" }}>
         <div className="container">
@@ -54,7 +54,7 @@ function HomePage() {
             Đơn vị tổ chức
           </p>
           <div className="text-center mt-6">
-            <img className="mx-auto" src="./images/logo-bongoaigiao.png" />
+            <img className="mx-auto" src="/images/logo-bongoaigiao.png" />
             <p className="uppercase mt-3">Bộ Ngoại Giao</p>
           </div>
           <div className="flex items-center gap-10 mt-6">
@@ -63,9 +63,9 @@ function HomePage() {
             <div style={{ flex: 1, borderBottom: "1px solid #dfdfdf" }}></div>
           </div>
           <div className="flex justify-center gap-x-10  flex-wrap">
-            <img className="h-24" src="./images/logo-01.png" />
-            <img className="h-24" src="./images/logo-02.png" />
-            <img className="h-24" src="./images/logo-03.png" />
+            <img className="h-24" src="/images/logo-01.png" />
+            <img className="h-24" src="/images/logo-02.png" />
+            <img className="h-24" src="/images/logo-03.png" />
           </div>
         </div>
       </div>

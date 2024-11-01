@@ -1,6 +1,11 @@
 import "lightgallery/css/lightgallery.css";
 import { useEffect, useRef, useState } from "react";
-import Footer from "../HomePage/Footer/Footer";
+import Footer from "../../HomePage/Footer/Footer";
+import VideoFrame1 from "./VideoFrame1";
+import NewsItem from "./NewsItem";
+import UserItem from "./UserItem";
+import ImagesEvent from "./ImagesEvent";
+import Focal from "./Focal";
 export const useResize = () => {
   const [size, setSize] = useState({ width: 0, height: 0 });
   const elementRef = useRef(null);
@@ -32,10 +37,8 @@ export const useResize = () => {
 
 function NgayVietNamOThuySi() {
   const [size, ref] = useResize();
-  const [size2, ref2] = useResize();
-  const [size3, ref3] = useResize();
-  const [size4, ref4] = useResize();
-  const [size5, ref5] = useResize();
+
+
   const [timeline, setTimeline] = useState([
     {
       title: "Xin chào Thụy Sỹ! Xin chào Châu Âu! ",
@@ -164,45 +167,26 @@ function NgayVietNamOThuySi() {
             </p>
             <button className="bg-red-600 text-white font-bold px-6 py-3 rounded w-fit"> Đọc thêm</button>
           </div>
-          <div ref={ref2} style={{ flex: 3 }}>
-            <iframe className="w-full min-w-80" style={{ height: (size2.width * 9) / 16 }} src="https://www.youtube.com/embed/UZA5i_kTZw0?rel=0" frameborder="0"></iframe>
-          </div>
+          <VideoFrame1 />
         </div>
         <p className="mt-20 font-bold text-5xl text-center mb-10" style={{ fontFamily: "Philosopher", color: "#151748" }}>
           Tin tức
         </p>
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 mt-2">
-          {news.map((i) => (
-            <div key={i.title} ref={ref3} className="rounded-xl" style={{ boxShadow: "0 0 10px rgba(0, 0, 0, 0.1)" }}>
-              <img style={{ height: (size3.width * 10) / 16 }} className="w-full object-cover rounded-tl-xl rounded-tr-xl" src={i.img} alt="" />
-              <div className="flex flex-col gap-3 p-5">
-                <b className="text-lg" style={{ color: "#54595f" }}>
-                  {i.title}
-                </b>
-                <p className="text-sm" style={{ color: "#777" }}>
-                  {i.description}
-                </p>
-                <div className="text-green-500 text-xs font-bold">Đọc thêm »</div>
-              </div>
-            </div>
+          {news.map((i, index) => (
+            <NewsItem i={i} key={index} />
           ))}
         </div>
+        <p className="mt-20 font-bold text-5xl text-center mb-10" style={{ fontFamily: "Philosopher", color: "#151748" }}>
+          Tiêu điểm
+        </p>
+        <Focal />
         <p className="mt-20 font-bold text-5xl text-center mb-10" style={{ fontFamily: "Philosopher", color: "#151748" }}>
           Khách mời
         </p>
         <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-2">
-          {users.map((i) => (
-            <div key={i.title} ref={ref4} className="rounded-xl">
-              <img style={{ height: size4.width }} className="w-full object-cover rounded-tl-xl rounded-tr-xl" src={i.img} alt="" />
-              <div className="flex flex-col gap-3 p-4">
-                <b className="text-lg" style={{ color: "#54595f" }}>
-                  {i.title}
-                </b>
-                <p className="" style={{ color: "#777" }}>
-                  {i.description}
-                </p>
-              </div>
-            </div>
+          {users.map((i, index) => (
+            <UserItem i={i} key={index} />
           ))}
         </div>
         <p className="mt-20 font-bold text-5xl text-center mb-2" style={{ fontFamily: "Philosopher", color: "#151748" }}>
@@ -235,7 +219,7 @@ function NgayVietNamOThuySi() {
             <div>Đơn vị tổ chức</div>
             <div style={{ flex: 1, borderBottom: "1px solid #dfdfdf" }}></div>
           </div>
-          <div className="flex gap-10 flex-wrap mt-6">
+          <div className="flex gap-10 flex-wrap mt-6 justify-center">
             <img className="h-24" src="/images/vtv4_2.png" alt="" />
             <img className="h-24" src="/images/bongoaigiao.png" alt="" />
             <img className="h-24" src="/images/le2.png" alt="" />
@@ -244,33 +228,7 @@ function NgayVietNamOThuySi() {
         <p className="mt-20 font-bold text-5xl text-center mb-12" style={{ fontFamily: "Philosopher", color: "#151748" }}>
           Hình ảnh sự kiện
         </p>
-        <div className="flex flex-col gap-6">
-          <img className="w-full" src="/images/DSC05011-scaled.jpg" alt="" />
-          <div ref={ref5} className="flex gap-6">
-            <div style={{ flex: 5 }}>
-              <img className="w-full" src="/images/DSC03892-scaled.jpg" alt="" />
-            </div>
-            <div style={{ flex: 2 }} className="h-full object-cover">
-              <img className="w-full object-cover" style={{ height: size5.height }} src="/images/DSC03730-scaled.jpg" alt="" />
-            </div>
-          </div>
-          <div className="flex gap-6">
-            <div style={{ flex: 1 }}>
-              <img className="w-full" src="/images/DSC04599-1-scaled.jpg" alt="" />
-            </div>
-            <div style={{ flex: 1 }} className="h-full object-cover">
-              <img className="w-full" src="/images/DSC03782-scaled.jpg" alt="" />
-            </div>
-          </div>
-          <div ref={ref5} className="flex gap-6">
-            <div style={{ flex: 2 }} className="h-full object-cover">
-              <img className="w-full object-cover" style={{ height: size5.height }} src="/images/DSC04763-scaled.jpg" alt="" />
-            </div>
-            <div style={{ flex: 5 }}>
-              <img className="w-full" src="/images/DSC04185-1-scaled.jpg" alt="" />
-            </div>
-          </div>
-        </div>
+        <ImagesEvent />
       </div>
       <Footer />
     </>

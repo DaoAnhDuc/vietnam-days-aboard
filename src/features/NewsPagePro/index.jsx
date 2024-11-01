@@ -3,6 +3,10 @@ import { useEffect, useState } from "react";
 import Header from "../HomePage/Header/Header";
 import { Link } from "react-router-dom";
 import NgayVietNamOThuySi from "./NgayVietNamOThuySi";
+import NgayVietNamOAo from "./NgayVietNamOAo";
+import NgayVietNamOAnDo from "./NgayVietNamOAnDo";
+import NgayVietNamOHanQuoc from "./NgayVietNamOHanQuoc";
+import NgayVietNamONamPhi from "./NgayVietNamONamPhi";
 
 function NewPagePro() {
   const [news, setNews] = useState(null);
@@ -42,6 +46,10 @@ function NewPagePro() {
         </div>
       )}
       {news && news.slug === "ngay-viet-nam-o-thuy-si" && <NgayVietNamOThuySi />}
+      {news && news.slug === "ngay-viet-nam-o-ao" && <NgayVietNamOAo />}
+      {news && news.slug === "ngay-viet-nam-o-an-do" && <NgayVietNamOAnDo />}
+      {news && news.slug === "ngay-viet-nam-o-han-quoc" && <NgayVietNamOHanQuoc />}
+      {news && news.slug === "ngay-viet-nam-o-nam-phi" && <NgayVietNamONamPhi />}
     </div>
   );
 }

@@ -34,7 +34,7 @@ function SliderNews({ data }) {
                   <p className="line-clamp-3 text-sm mt-2">{item.description}</p>
                 </div>
                 <div className="text-center text-red-600 py-3 font-bold text-sm flex justify-center items-center gap-2" style={{ borderTop: "1px solid #E3E3E3" }}>
-                  Xem thêm <img className="h-3" src="./images/arrow-red.svg" />
+                  Xem thêm <img className="h-3" src="/images/arrow-red.svg" />
                 </div>
               </div>
             </Link>

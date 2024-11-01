@@ -3,6 +3,7 @@ import Header from "../HomePage/Header/Header";
 import { getNews, slugify } from "../../App";
 import { Link, useParams } from "react-router-dom";
 import axios from "axios";
+import Footer from "../HomePage/Footer/Footer";
 
 function NewsPageDetail() {
   const { newsId } = useParams();
@@ -64,6 +65,7 @@ function NewsPageDetail() {
           </>
         )}
       </div>
+      <Footer/>
     </div>
   );
 }

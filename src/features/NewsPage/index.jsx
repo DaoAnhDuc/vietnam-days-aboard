@@ -31,14 +31,14 @@ function NewsPage() {
   const [data, setData] = useState([]);
   useEffect(() => {
     getData();
-    return () => {};
+    return () => { };
   }, []);
 
   const getData = async () => {
     try {
       const data = await getNews();
       setData(data);
-    } catch (error) {}
+    } catch (error) { }
   };
 
   return (
@@ -47,30 +47,34 @@ function NewsPage() {
       <img src="https://ngocdiep.vn/wp-content/uploads/2021/08/tin-tuc.jpg" alt="" />
       <div className="mt-10 pb-10">
         <div className="container">
-          <p className="font-bold text-5xl text-center mb-10" style={{ fontFamily: "Philosopher", color: "#151748" }}>
-            Tin tức
-          </p>
-          <div>
-            <p className="font-bold text-xl" style={{ color: "#151748" }}>
-              Chuyên mục
-            </p>
-            <div className="flex gap-x-2 gap-y-1 text-nowrap flex-wrap mt-2 mb-4" style={{ fontFamily: "Roboto" }}>
-              {danhmuc.map((i, index) =>
-                active === index ? (
-                  <div className="bg-red-600 text-white w-fit text-sm px-3 py-1 rounded-2xl">
-                    {i.label} ({i.total})
-                  </div>
-                ) : (
-                  <div onClick={() => setActive(index)} className="w-fit text-sm px-3 py-1 rounded-2xl cursor-pointer" style={{ background: "#dedede" }}>
-                    {i.label} ({i.total})
-                  </div>
-                )
-              )}
-            </div>
-          </div>
-          <p className="font-bold text-xl mt-10" style={{ color: "#151748" }}>
-            Tin tức liên quan
-          </p>
+              <p className="font-bold text-5xl text-center mb-10" style={{ fontFamily: "Philosopher", color: "#151748" }}>
+                Tin tức
+              </p>
+          {
+            false && <>
+              <div>
+                <p className="font-bold text-xl" style={{ color: "#151748" }}>
+                  Chuyên mục
+                </p>
+                <div className="flex gap-x-2 gap-y-1 text-nowrap flex-wrap mt-2 mb-4" style={{ fontFamily: "Roboto" }}>
+                  {danhmuc.map((i, index) =>
+                    active === index ? (
+                      <div className="bg-red-600 text-white w-fit text-sm px-3 py-1 rounded-2xl">
+                        {i.label} ({i.total})
+                      </div>
+                    ) : (
+                      <div onClick={() => setActive(index)} className="w-fit text-sm px-3 py-1 rounded-2xl cursor-pointer" style={{ background: "#dedede" }}>
+                        {i.label} ({i.total})
+                      </div>
+                    )
+                  )}
+                </div>
+              </div>
+              <p className="font-bold text-xl mt-10" style={{ color: "#151748" }}>
+                Tin tức liên quan
+              </p>
+            </>
+          }
           <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3 mt-2">
             {data.map((item) => (
               <div className="flex flex-col cursor-pointer" onClick={() => navigate(`/tin-tuc/${slugify(item.title)}`)} style={{ boxShadow: "0px 5px 20px 5px rgba(0, 0, 0, 0.1)", padding: "20px", paddingBottom: 10 }}>
@@ -78,7 +82,7 @@ function NewsPage() {
                   <Link to={`/tin-tuc/${slugify(item.title)}`}>
                     {/* <img className="w-full h-52 object-cover" src="/images/default.png" /> */}
                     <div className="flex items-center gap-2 mt-2">
-                      <img className="h-6" src="./images/clock.png" alt="" />
+                      <img className="h-6" src="/images/clock.png" alt="" />
                       <span style={{ fontFamily: "Roboto" }} className="text-sm mt-2">
                         5 Tháng Hai, 2024
                       </span>
@@ -89,7 +93,7 @@ function NewsPage() {
                 </div>
                 <Link to={`/tin-tuc/${slugify(item.title)}`}>
                   <div className=" text-red-600 py-3 font-bold text-sm flex items-center gap-2">
-                    Xem thêm <img className="h-3" src="./images/arrow-red.svg" />
+                    Xem thêm <img className="h-3" src="/images/arrow-red.svg" />
                   </div>
                 </Link>
               </div>

@@ -15,7 +15,9 @@
     "news": [
       {
         "slug": "ngay-viet-nam-o-ao",
-        "title": "Ngày Việt Nam ở Áo"
+        "title": "Ngày Việt Nam ở Áo",
+        "banner": "Vietnam-Day-2022-Austria.jpg",
+        "link": "https://vietnamdaysabroad.mofa.gov.vn/ngay-viet-nam-o-nuoc-ngoai/ngay-viet-nam-o-ao-2022/"
       },
       {
         "slug": "ngay-viet-nam-o-an-do",
