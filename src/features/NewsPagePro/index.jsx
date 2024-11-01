@@ -27,7 +27,7 @@ function NewPagePro() {
         }
       });
     });
-    document.title = data?.title;
+    document.title = data?.title || "Vietnam days aboard";
     setNews(data);
     setLoading(false);
   };
