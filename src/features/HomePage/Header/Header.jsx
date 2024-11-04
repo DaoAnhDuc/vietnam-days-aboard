@@ -2,7 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 function Header() {
-  const location = useLocation()
+  const location = useLocation();
   const [open, setOpen] = useState(false);
   const [dropdownMenu, setDropdownMenu] = useState([]);
   const [hover, setHover] = useState(false);
@@ -15,7 +15,7 @@ function Header() {
   }, []);
 
   useEffect(() => {
-    handleResize()
+    handleResize();
     window.scrollTo({
       top: 0,
       behavior: "smooth", // for smooth scrolling
@@ -37,7 +37,10 @@ function Header() {
     <div className="relative w-full h-20" style={{ borderBottom: "1px solid #ffffff6e" }}>
       <div className="container h-full flex justify-between items-center">
         <Link to={"/"}>
-          <img className="h-16" src="/images/logo.png" />
+          <div className="flex gap-2">
+            <img className="h-16" src="/images/logo_first.png" />
+            <img className="h-16" src="/images/logo.png" />
+          </div>
         </Link>
         <div className="flex font-bold gap-4 items-center" style={{ fontSize: 15 }}>
           <div className="lg:flex hidden font-bold gap-6 items-center  ">

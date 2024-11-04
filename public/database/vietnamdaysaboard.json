@@ -37,5 +37,18 @@
         "title": "Ngày Việt Nam ở Nam Phi"
       }
     ]
+  },
+  {
+    "year": 2024,
+    "news": [
+      {
+        "slug": "ngay-viet-nam-o-brasil",
+        "title": "Ngày việt nam ở Brasil"
+      },
+      {
+        "slug": "ngay-viet-nam-o-a-rap",
+        "title": "Ngày việt nam ở Ả rập"
+      }
+    ]
   }
 ]

@@ -64,13 +64,13 @@ function HomePage() {
             <div style={{ flex: 1, borderBottom: "1px solid #dfdfdf" }}></div>
           </div>
           <div className="flex justify-center gap-x-10  flex-wrap">
-            <img className="h-24" src="/images/logo-01.png" />
+            <img className="h-24" src="/images/trivietlogo.jpg" />
             <img className="h-24" src="/images/logo-02.png" />
             <img className="h-24" src="/images/logo-03.png" />
           </div>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
