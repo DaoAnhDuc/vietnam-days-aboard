@@ -45,7 +45,7 @@ function NewsPage() {
   return (
     <div style={{ background: "#f5f5f5" }}>
       <Header />
-      <img src="https://ngocdiep.vn/wp-content/uploads/2021/08/tin-tuc.jpg" alt="" />
+      <img src="/images/tin-tuc.jpg" alt="" />
       <div className="mt-10 pb-10">
         <div className="container">
               <p className="font-bold text-5xl text-center mb-10" style={{ fontFamily: "Philosopher", color: "#151748" }}>

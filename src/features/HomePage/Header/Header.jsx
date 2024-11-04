@@ -34,7 +34,7 @@ function Header() {
   };
 
   return (
-    <div className="relative w-full h-20" style={{ borderBottom: "1px solid #ffffff6e" }}>
+    <div className="relative w-full h-20 bg-white" style={{ borderBottom: "1px solid #ffffff6e" }}>
       <div className="container h-full flex justify-between items-center">
         <Link to={"/"}>
           <div className="flex gap-2">
