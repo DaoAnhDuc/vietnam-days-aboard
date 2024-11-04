@@ -13,7 +13,7 @@ function HomePage() {
   }, []);
 
   const getData = async () => {
-    document.title = "Vietnam days aboard";
+    document.title = "Vietnam days abroad";
     const data = await getNews();
     setNews(data);
   };
@@ -22,7 +22,7 @@ function HomePage() {
     <div>
       <Header />
       <div>
-        <img className="w-full" src="/images/banner2024.png"></img>
+        <img className="w-full" src="/images/banner2024.jpg"></img>
       </div>
       <div className=" mt-20 pb-16" style={{ borderBottom: "1px solid #dfdfdf" }}>
         <div className="container">

@@ -19,7 +19,7 @@ function NewsPageDetail() {
       const data = await getNews();
       const newsData = data.find((i) => slugify(i.title) === newsId);
       const response = await axios.get(`/${newsData.template}`);
-      document.title = newsData?.title || "Vietnam days aboard";
+      document.title = newsData?.title || "Vietnam days abroad";
       setLoading(false);
       setData({
         ...newsData,

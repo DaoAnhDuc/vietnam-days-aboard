@@ -22,7 +22,7 @@ function NewPagePro() {
   }, [news]);
 
   const getData = async () => {
-    const response = await axios.get(`/database/vietnamdaysaboard.json`);
+    const response = await axios.get(`/database/vietnamdaysabroad.json`);
     let data = null;
     response.data.forEach((item) => {
       item.news.forEach((i) => {
@@ -31,7 +31,7 @@ function NewPagePro() {
         }
       });
     });
-    document.title = data?.title || "Vietnam days aboard";
+    document.title = data?.title || "Vietnam days abroad";
     setNews(data);
     setLoading(false);
   };

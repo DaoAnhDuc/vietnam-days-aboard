@@ -29,7 +29,7 @@ function Header() {
   };
 
   const getData = async () => {
-    const response = await axios.get(`/database/vietnamdaysaboard.json`);
+    const response = await axios.get(`/database/vietnamdaysabroad.json`);
     setDropdownMenu(response.data);
   };
 
