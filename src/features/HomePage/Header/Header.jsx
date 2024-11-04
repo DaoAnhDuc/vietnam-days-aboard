@@ -71,10 +71,10 @@ function Header() {
               Triển lãm trực tuyến <br></br> Tranh sơn mài Việt Nam
             </a>
           </div>
-          <div className="flex gap-3">
+          {/* <div className="flex gap-3">
             <img className="h-6" src="/images/vietnam.png" />
             <img className="h-6" src="/images/united-kingdom.png" />
-          </div>
+          </div> */}
           <button className="lg:hidden flex " onClick={() => setOpen(!open)}>
             <img className="h-8 cursor-pointer" src="/images/bars-icon.png" />
           </button>

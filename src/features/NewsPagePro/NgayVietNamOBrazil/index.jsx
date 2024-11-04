@@ -21,15 +21,15 @@ const NgayVietNamOBrazil = () => {
         <p className="mt-20 font-bold text-5xl text-center mb-10" style={{ fontFamily: "Philosopher", color: "#151748" }}>
           Giới thiệu về chương trình
         </p>
-        <p className="text-center">Đang cập nhật</p>
-        {/* <p>
-          Là hoạt động mở đầu cho “Ngày Việt Nam tại Hàn Quốc 2022”, chương trình Giao lưu điện ảnh Việt Nam – Hàn Quốc đã khai mạc vào tối 2/12/2022 tại CGV Myeongdong Station Cinelibrary (Seoul). Để quảng bá hình ảnh đất nước và con người
-          Việt Nam, Cục Điện ảnh đã lựa chọn những tác phẩm nổi bật của điện ảnh Việt để công chiếu trong hai ngày 3 – 4/12.
+        <p>
+          Năm nay chương trình “Ngày Việt Nam tại Ả-rập Xê-út” sẽ được tổ chức trong khoảng 13-15/12 tại thủ đô Riyadh. Chương trình tiếp tục giới thiệu Không gian văn hoá Việt Nam đậm đà bản sắc tới công chúng sở tại, với nhiều trải nghiệm
+          độc đáo như nặn Tò He truyền thống, in tranh dân gian Đông Hồ và thực hiện các tác phẩm sơn mài tinh xảo. Các nghệ sĩ chơi nhạc cụ truyền thống còn nhập vai thành “tố nữ" để tái hiện bộ tranh Tứ Bình giữa đời thực, hứa hẹn là cách
+          quảng bá văn hoá Việt vô cùng độc đáo, gây ấn tượng sâu đậm trong lòng khách tham dự.
         </p>
         <p className="mt-3">
-          Trong buổi khai mạc, chương trình đã vinh dự đón tiếp các vị đại biểu, khách quý: Đại sứ đặc mệnh toàn quyền Việt Nam tại Hàn Quốc Nguyễn Vũ Tùng, Chủ tịch Hội đồng điện ảnh Hàn Quốc (KOFIC) Park Ki Yong, Phó Chủ tịch Tập đoàn CJ
-          Hee Kyung Jo Min, Tổng Giám đốc CGV Việt Nam Ko Jea Soo, Phó Cục trưởng Cục Điện ảnh (Bộ Văn hóa, Thể thao và Du lịch) Nguyễn Thị Thu Hà, đại diện Bộ Ngoại giao cùng nhiều khách mời khác.
-        </p> */}
+          Năm nay, “Ngày Việt Nam ở nước ngoài” được tổ chức tại thành phố Rio de Janeiro của Bra-xin trong các ngày 15-17/11, ngay trước thềm Hội nghị thượng đỉnh Nhóm các nền kinh tế phát triển và mới nổi hàng đầu thế giới (G20). Đây là
+          thời điểm 20 nền kinh tế lớn nhất hành tinh và nhiều quốc gia thành viên cùng tụ họp, mang đến cả cơ hội lẫn thách thức cho việc tổ chức chương trình.{" "}
+        </p>
         {/* <button className="bg-red-600 text-white font-bold text-sm px-6 p-2 rounded w-fit mt-6">Xem chi tiết</button> */}
         <p className="mt-20 font-bold text-5xl text-center mb-4" style={{ fontFamily: "Philosopher", color: "#151748" }}>
           Nội dung chương trình

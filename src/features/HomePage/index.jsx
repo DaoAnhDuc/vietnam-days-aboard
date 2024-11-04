@@ -6,7 +6,7 @@ import Footer from "./Footer/Footer";
 
 function HomePage() {
   const [news, setNews] = useState([]);
-  const [showMore, setShowMore] = useState(false);
+  // const [showMore, setShowMore] = useState(false);
   useEffect(() => {
     getData();
     return () => {};
@@ -29,7 +29,8 @@ function HomePage() {
           <p className="font-bold text-5xl text-center" style={{ fontFamily: "Philosopher", color: "#151748" }}>
             Thông cáo báo chí
           </p>
-          <p className="font-bold text-xl mt-8" style={{ color: "#1c1c24" }}>
+          <p className="text-center">Đang cập nhật...</p>
+          {/* <p className="font-bold text-xl mt-8" style={{ color: "#1c1c24" }}>
             “NGÀY VIỆT NAM Ở NƯỚC NGOÀI” LẦN ĐẦU ĐƯỢC TỔ CHỨC TẠI BRA-XIN VÀ Ả-RẬP XÊ-ÚT
           </p>
           <p className="font-bold mt-5">
@@ -82,10 +83,10 @@ function HomePage() {
                 <img className="w-fit max-w-full" src="/images/qrcode_gt.jpg" alt="" />
               </div>
             </div>
-          )}
-          <button onClick={() => setShowMore(!showMore)} className="bg-red-600 text-white px-4 py-2 text-sm font-bold rounded mt-5">
+          )} */}
+          {/* <button onClick={() => setShowMore(!showMore)} className="bg-red-600 text-white px-4 py-2 text-sm font-bold rounded mt-5">
             {showMore ? "Ẩn bớt" : "Đọc thêm"}
-          </button>
+          </button> */}
         </div>
       </div>
       <div className=" mt-20 pb-10">

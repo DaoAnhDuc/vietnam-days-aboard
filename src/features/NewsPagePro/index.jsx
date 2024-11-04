@@ -9,6 +9,8 @@ import NgayVietNamOHanQuoc from "./NgayVietNamOHanQuoc";
 import NgayVietNamONamPhi from "./NgayVietNamONamPhi";
 import NgayVietNamOBrazil from "./NgayVietNamOBrazil";
 import NgayVietNamOARap from "./NgayVietNamOARap";
+import NgayVietNamONhatBan from "./NgayVietNamONhatBan";
+import NgayVietNamOPhap from "./NgayVietNamOPhap";
 
 function NewPagePro() {
   const [news, setNews] = useState(null);
@@ -53,7 +55,9 @@ function NewPagePro() {
       {news && news.slug === "ngay-viet-nam-o-han-quoc" && <NgayVietNamOHanQuoc />}
       {news && news.slug === "ngay-viet-nam-o-nam-phi" && <NgayVietNamONamPhi />}
       {news && news.slug === "ngay-viet-nam-o-brasil" && <NgayVietNamOBrazil />}
-      {news && news.slug === "ngay-viet-nam-o-a-rap" && <NgayVietNamOARap />}
+      {news && news.slug === "ngay-viet-nam-o-a-rap" && <NgayVietNamOARap />} 
+      {news && news.slug === "ngay-viet-nam-o-nhat-ban" && <NgayVietNamONhatBan />}
+       {news && news.slug === "ngay-viet-nam-o-phap" && <NgayVietNamOPhap />}
     </div>
   );
 }
