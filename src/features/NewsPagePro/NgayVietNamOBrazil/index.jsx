@@ -2,9 +2,21 @@ import React from "react";
 import Footer from "../../HomePage/Footer/Footer";
 
 const NgayVietNamOBrazil = () => {
+  const tintuc = [
+    {
+      title: "Mỹ Latin và Trung Đông sẽ là điểm đến của Ngày Việt Nam ở nước ngoài 2024",
+      description: "Mỹ Latin và Trung Đông sẽ là điểm đến của Ngày Việt Nam ở nước ngoài 2024",
+      img: "banner_arap.png",
+    },
+    {
+      title: "Ngày Việt Nam ở nước ngoài 2024 - Hội tụ tinh hoa ngàn năm, vươn mình trong kỷ nguyên mới",
+      description: "Ngày Việt Nam ở nước ngoài 2024 - Hội tụ tinh hoa ngàn năm, vươn mình trong kỷ nguyên mới ...",
+      img: "key visual vn br.jpg",
+    },
+  ];
   return (
     <div className="">
-      {/* <img src="/images/Vietnam-Day-2022-Korea.jpg" alt="" /> */}
+      <img src="/images/key visual vn br.jpg" alt="" />
       <div className="container">
         <p className="mt-20 font-bold text-5xl text-center mb-10" style={{ fontFamily: "Philosopher", color: "#151748" }}>
           Giới thiệu về chương trình
@@ -165,9 +177,9 @@ const NgayVietNamOBrazil = () => {
         <p className="mt-20 font-bold text-5xl text-center mb-10" style={{ fontFamily: "Philosopher", color: "#151748" }}>
           Tin tức cập nhật
         </p>
-        <p className="text-center">Đang cập nhật</p>
+        {/* <p className="text-center">Đang cập nhật</p> */}
         <div className="grid gap-x-6 gap-y-8 md:grid-cols-2 lg:grid-cols-3 ">
-          {[].map((item) => (
+          {tintuc.map((item) => (
             <div className="" style={{ boxShadow: "0 0 10px rgba(0, 0, 0, 0.1))" }}>
               <img className="w-full h-52 object-cover rounded-tl-xl rounded-tr-xl" src={`/images/${item.img}`} />
               <div className="p-5 h-48">

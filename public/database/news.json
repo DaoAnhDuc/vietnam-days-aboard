@@ -1,8 +1,22 @@
 [
   {
+    "title": "Mỹ Latin và Trung Đông sẽ là điểm đến của Ngày Việt Nam ở nước ngoài 2024",
+    "description": "Mỹ Latin và Trung Đông sẽ là điểm đến của Ngày Việt Nam ở nước ngoài 2024",
+    "banner": "banner_arap.png",
+    "template": "template/new_01.html",
+    "create": "4 Tháng Mười Một, 2024"
+  },
+  {
+    "title": "Ngày Việt Nam ở nước ngoài 2024 - Hội tụ tinh hoa ngàn năm, vươn mình trong kỷ nguyên mới",
+    "description": "Ngày Việt Nam ở nước ngoài 2024 - Hội tụ tinh hoa ngàn năm, vươn mình trong kỷ nguyên mới ...",
+    "banner": "key visual vn br.jpg",
+    "template": "template/new_02.html",
+    "create": "4 Tháng Mười Một, 2024"
+  },
+  {
     "title": "Trải nghiệm Tết Việt tại “Ngày tìm hiểu Việt Nam 2024”",
     "description": "Sáng ngày 3/2, Chương trình “Ngày tìm hiểu Việt Nam” được tổ chức tại đường...",
-    "banner":"tet_3.jpg",
+    "banner": "tet_3.jpg",
     "template": "template/new_1.html",
     "create": "5 Tháng Hai, 2024",
     "createBy": ""
