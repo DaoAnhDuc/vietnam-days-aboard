@@ -41,7 +41,7 @@ function HomePage() {
             từ các cơ quan, địa phương, doanh nghiệp, cộng đồng người Việt Nam ở nước ngoài và đông đảo công chúng ở cả trong và ngoài nước.
           </p>
           <p>
-            Năm 2024, “Ngày Việt Nam ở nước ngoài” được tổ chức sẽ được tổ chức tại hai quốc gia Bra-xin và Ả-rập Xê-út. Sự kiện đánh dấu mốc kỷ niệm 35 năm thiết lập quan hệ ngoại giao giữa Việt Nam với Bra-xin và 15 năm thiết lập quan hệ
+            Năm 2024, “Ngày Việt Nam ở nước ngoài” được tổ chức sẽ được tổ chức tại hai quốc gia Bra-xin và Ả-rập Xê-út. Sự kiện đánh dấu mốc kỷ niệm 35 năm thiết lập quan hệ ngoại giao giữa Việt Nam với Bra-xin và 25 năm thiết lập quan hệ
             ngoại giao giữa Việt Nam với Ả-rập Xê-út. Buổi họp báo công bố "Ngày Việt Nam ở nước ngoài 2024" sẽ được tổ chức từ 9h ngày 06/11/2024 tại trụ sở Bộ Ngoại giao - Số 2 Lê Quang Đạo, Nam Từ Liêm, Hà Nội.
           </p>
           </div>
