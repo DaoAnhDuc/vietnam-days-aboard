@@ -14,7 +14,7 @@ function Footer() {
         </div>
         <div className="mt-6 flex justify-between items-center">
           <div className="flex gap-2 text-2xl items-center">
-            <a target="_blank" href="https://www.facebook.com/VietNamDaysAbroad">
+            <a target="_blank" href="https://web.facebook.com/ngayvietnamonuocngoai">
               <FaFacebook />
             </a>
             <a className="text-3xl" target="_blank" href="https://www.youtube.com/channel/UCLvOy7LHvOi0SCcWbcNFAmg">

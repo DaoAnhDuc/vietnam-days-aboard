@@ -75,6 +75,9 @@ function Header() {
             <img className="h-6" src="/images/vietnam.png" />
             <img className="h-6" src="/images/united-kingdom.png" />
           </div> */}
+          <Link to={"https://web.facebook.com/ngayvietnamonuocngoai"} target="_blank">
+            <img className="h-6" src={`/images/2023_Facebook_icon.svg`} alt="" />
+          </Link>
           <button className="lg:hidden flex " onClick={() => setOpen(!open)}>
             <img className="h-8 cursor-pointer" src="/images/bars-icon.png" />
           </button>

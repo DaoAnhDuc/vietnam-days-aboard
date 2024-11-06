@@ -30,20 +30,20 @@ function HomePage() {
             Thông cáo báo chí
           </p> */}
           <div className="flex flex-col gap-4">
-          <b className="text-2xl text-center">Họp báo công bố "Ngày Việt Nam ở nước ngoài 2024” </b>
-          <p>
-            “Tuần/Ngày Việt Nam ở nước ngoài” là chương trình quảng bá quốc gia thường niên - một trong những nhiệm vụ nằm trong Chiến lược Ngoại giao Văn hóa đến năm 2030 của Việt Nam. Chương trình được Thủ tướng Chính phủ giao Vụ Ngoại
-            giao Văn hóa và UNESCO - Bộ Ngoại giao chủ trì tổ chức từ năm 2010 nhằm quảng bá hình ảnh đất nước, con người và văn hóa Việt Nam với bạn vè quốc tế, góp phần đưa quan hệ giữa Việt Nam với các nước đi vào chiều sâu, bền vững và
-            tăng cường hữu nghị, sự hiểu biết, tin cậy lẫn nhau, giữa nhân dân các nước với Việt Nam.
-          </p>
-          <p>
-            Sau 12 năm triển khai, thương hiệu sự kiện này đã đặt chân đến 20 QUỐC GIA, mang theo nhiều hoạt động giao lưu, kết nối ở cả ba lĩnh vực CHÍNH TRỊ, KINH TẾ và VĂN HÓA. Chương trình luôn nhận được sự đồng hành, hưởng ứng tích cực
-            từ các cơ quan, địa phương, doanh nghiệp, cộng đồng người Việt Nam ở nước ngoài và đông đảo công chúng ở cả trong và ngoài nước.
-          </p>
-          <p>
-            Năm 2024, “Ngày Việt Nam ở nước ngoài” được tổ chức sẽ được tổ chức tại hai quốc gia Bra-xin và Ả-rập Xê-út. Sự kiện đánh dấu mốc kỷ niệm 35 năm thiết lập quan hệ ngoại giao giữa Việt Nam với Bra-xin và 25 năm thiết lập quan hệ
-            ngoại giao giữa Việt Nam với Ả-rập Xê-út. Buổi họp báo công bố "Ngày Việt Nam ở nước ngoài 2024" sẽ được tổ chức từ 9h ngày 06/11/2024 tại trụ sở Bộ Ngoại giao - Số 2 Lê Quang Đạo, Nam Từ Liêm, Hà Nội.
-          </p>
+            {/* <b className="text-2xl text-center">Họp báo công bố "Ngày Việt Nam ở nước ngoài 2024” </b> */}
+            <p>
+              “Tuần/Ngày Việt Nam ở nước ngoài” là chương trình quảng bá quốc gia thường niên - một trong những nhiệm vụ nằm trong Chiến lược Ngoại giao Văn hóa đến năm 2030 của Việt Nam. Chương trình được Thủ tướng Chính phủ giao Vụ Ngoại
+              giao Văn hóa và UNESCO - Bộ Ngoại giao chủ trì tổ chức từ năm 2010 nhằm quảng bá hình ảnh đất nước, con người và văn hóa Việt Nam với bạn vè quốc tế, góp phần đưa quan hệ giữa Việt Nam với các nước đi vào chiều sâu, bền vững
+              và tăng cường hữu nghị, sự hiểu biết, tin cậy lẫn nhau, giữa nhân dân các nước với Việt Nam.
+            </p>
+            <p>
+              Sau 12 năm triển khai, thương hiệu sự kiện này đã đặt chân đến 20 QUỐC GIA, mang theo nhiều hoạt động giao lưu, kết nối ở cả ba lĩnh vực CHÍNH TRỊ, KINH TẾ và VĂN HÓA. Chương trình luôn nhận được sự đồng hành, hưởng ứng tích
+              cực từ các cơ quan, địa phương, doanh nghiệp, cộng đồng người Việt Nam ở nước ngoài và đông đảo công chúng ở cả trong và ngoài nước.
+            </p>
+            <p>
+              Năm 2024, “Ngày Việt Nam ở nước ngoài” được tổ chức sẽ được tổ chức tại hai quốc gia Bra-xin và Ả-rập Xê-út. Sự kiện đánh dấu mốc kỷ niệm 35 năm thiết lập quan hệ ngoại giao giữa Việt Nam với Bra-xin và 25 năm thiết lập quan
+              hệ ngoại giao giữa Việt Nam với Ả-rập Xê-út. Buổi họp báo công bố "Ngày Việt Nam ở nước ngoài 2024" sẽ được tổ chức từ 9h ngày 06/11/2024 tại trụ sở Bộ Ngoại giao - Số 2 Lê Quang Đạo, Nam Từ Liêm, Hà Nội.
+            </p>
           </div>
           {/* <p className="text-center">Đang cập nhật...</p> */}
           {/* <p className="font-bold text-xl mt-8" style={{ color: "#1c1c24" }}>
