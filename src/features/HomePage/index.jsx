@@ -112,7 +112,16 @@ function HomePage() {
           <p className="font-bold text-5xl text-center" style={{ fontFamily: "Philosopher", color: "#151748" }}>
             Video giới thiệu chương trình
           </p>
-          <iframe className="w-full mt-6" style={{ height: (size.width * 9) / 18 }} src="https://www.youtube.com/watch?v=nTRVKpxqYJM" frameborder="0"></iframe>
+          <iframe
+          className="w-full mt-6"
+            style={{ height: (size.width * 9) / 18 }}
+            src="https://www.youtube.com/embed/nTRVKpxqYJM?si=snHJyzBPQUAzSKtH"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
         </div>
       </div>
       <div className=" mt-20 pb-10">
