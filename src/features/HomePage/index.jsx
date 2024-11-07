@@ -3,9 +3,11 @@ import Header from "./Header/Header";
 import SliderNews from "./Slider/SliderNews";
 import { getNews } from "../../App";
 import Footer from "./Footer/Footer";
+import { useResize } from "../NewsPagePro/NgayVietNamOThuySi";
 
 function HomePage() {
   const [news, setNews] = useState([]);
+  const [size, ref] = useResize();
   // const [showMore, setShowMore] = useState(false);
   useEffect(() => {
     getData();
@@ -103,6 +105,14 @@ function HomePage() {
           {/* <button onClick={() => setShowMore(!showMore)} className="bg-red-600 text-white px-4 py-2 text-sm font-bold rounded mt-5">
             {showMore ? "Ẩn bớt" : "Đọc thêm"}
           </button> */}
+        </div>
+      </div>
+      <div className="mt-20 pb-10">
+        <div className="container" ref={ref}>
+          <p className="font-bold text-5xl text-center" style={{ fontFamily: "Philosopher", color: "#151748" }}>
+            Video giới thiệu chương trình
+          </p>
+          <iframe className="w-full mt-6" style={{ height: (size.width * 9) / 18 }} src="https://www.youtube.com/watch?v=nTRVKpxqYJM" frameborder="0"></iframe>
         </div>
       </div>
       <div className=" mt-20 pb-10">
