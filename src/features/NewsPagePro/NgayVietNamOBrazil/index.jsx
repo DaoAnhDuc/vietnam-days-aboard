@@ -49,7 +49,7 @@ const NgayVietNamOBrazil = () => {
               </tr>
             </thead>
             <tbody>
-              <tr style={{ borderBottom: "1px solid #dfdfdf" }}>
+              {/* <tr style={{ borderBottom: "1px solid #dfdfdf" }}>
                 <td className="p-2">
                   06/11 <br /> (hoặc có thể thay đổi theo lịch đoàn tiền trạm VPCP)
                 </td>
@@ -92,7 +92,7 @@ const NgayVietNamOBrazil = () => {
                   </ul>
                 </td>
                 <td className="p-2">BNG, KGVH</td>
-              </tr>
+              </tr> */}
               <tr style={{ borderBottom: "1px solid #dfdfdf" }}>
                 <td className="p-2">15/11</td>
                 <td className="p-2">Mở cửa rộng rãi đón khách 1 phần Không Gian Văn hóa (09:00 - 16:00)</td>
