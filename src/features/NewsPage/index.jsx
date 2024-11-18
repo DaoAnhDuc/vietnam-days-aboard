@@ -43,7 +43,7 @@ function NewsPage() {
   };
 
   return (
-    <div style={{ background: "#f5f5f5" }}>
+    <div >
       <Header />
       <img src="/images/tin-tuc.jpg" alt="" />
       <div className="mt-10 pb-10">
@@ -78,7 +78,7 @@ function NewsPage() {
           }
           <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3 mt-2">
             {data.map((item) => (
-              <div className="flex flex-col cursor-pointer" onClick={() => navigate(`/tin-tuc/${slugify(item.title)}`)} style={{ boxShadow: "0px 5px 20px 5px rgba(0, 0, 0, 0.1)", padding: "20px", paddingBottom: 10 }}>
+              <div className="flex flex-col cursor-pointer bg-white" onClick={() => navigate(`/tin-tuc/${slugify(item.title)}`)} style={{ boxShadow: "0px 5px 20px 5px rgba(0, 0, 0, 0.1)", padding: "20px", paddingBottom: 10 }}>
                 <div style={{ flex: 1 }}>
                   <Link to={`/tin-tuc/${slugify(item.title)}`}>
                     {/* <img className="w-full h-52 object-cover" src="/images/default.png" /> */}

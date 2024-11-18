@@ -27,7 +27,7 @@ function SliderNews({ data }) {
         {data.map((item, index) => (
           <SwiperSlide key={index}>
             <Link to={item.link ? item.link : `tin-tuc/${slugify(item.title)}`} target={item.link ? '_blank': "_self"}>
-              <div className="" style={{ boxShadow: "0px 5px 20px 5px rgba(0, 0, 0, 0.1)" }}>
+              <div className="" style={{ boxShadow: "0px 5px 20px 5px rgba(0, 0, 0, 0.1)",background: '#fff' }}>
                 <img className="w-full h-52 object-cover" src={`/images/${item.banner ? item.banner : "images/default.png"}`} />
                 <div className="p-5 h-48">
                   <p className="line-clamp-3 text-black font-bold text-xl">{item.title}</p>
