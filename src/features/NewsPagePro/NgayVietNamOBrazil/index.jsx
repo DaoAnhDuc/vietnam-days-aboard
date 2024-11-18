@@ -7,6 +7,19 @@ const NgayVietNamOBrazil = () => {
   const [size, ref] = useResize();
   const tintuc = [
     {
+      title: "Người dân Brazil nặn tò he hình quả bóng, say sưa xem võ cổ truyền Việt",
+      description: "Những câu chuyện dân gian, màn trình diễn nghệ thuật truyền thống, không gian phố cổ dẫn dắt công chúng Brazil vào hành trình khám phá văn hóa Việt đầy cuốn hút.",
+      img: "bai-pr-1-ngay-viet-nam-tai-braxin-ver2docx-1731906534090.webp",
+      link: "https://dantri.com.vn/giai-tri/nguoi-dan-brazil-nan-to-he-hinh-qua-bong-say-sua-xem-vo-co-truyen-viet-20241118121820342.htm",
+    },
+    {
+      title: "“Ngày Việt Nam tại Brazil” lần đầu mang Không gian văn hóa Việt tới khu vực Mỹ Latinh",
+      description:
+        'Chiều ngày 17/11 (theo giờ địa phương), tại Rio-de-Janeiro, Brazil, Thủ tướng Phạm Minh Chính đã dự chương trình "Ngày Việt Nam tại Brazil" với chủ đề "Hội tụ tinh hoa ngàn năm văn hoá - Vươn mình trong kỷ nguyên giàu mạnh, thịnh vượng"',
+      img: "6de98ef1-f641-4c22-a07f-dc92c0a7e624.jfif",
+      link: "https://videophapluat.baophapluat.vn/viet-nam-ky-nguyen-moi/ngay-viet-nam-tai-brazil-lan-dau-mang-khong-gian-van-hoa-viet-toi-khu-vuc-my-latinh-183039.html",
+    },
+    {
       title: "Thủ tướng Phạm Minh Chính dự Chương trình “Ngày Việt Nam tại Brazil”",
       description: "Dự Ngày Việt Nam tại Brazil, Thủ tướng Phạm Minh Chính kỳ vọng đây là khởi đầu cho giai đoạn hợp tác văn hóa nhiều hơn, mạnh mẽ hơn, sâu rộng hơn giữa hai nước",
       img: "18112024_1.jpg",
@@ -41,7 +54,7 @@ const NgayVietNamOBrazil = () => {
   return (
     <div className="">
       <img src="/images/key visual vn br.jpg" alt="" />
-      <div className="container" ref={ref}>
+      <div className="container">
         <p className="mt-20 font-bold text-5xl text-center mb-10" style={{ fontFamily: "Philosopher", color: "#151748" }}>
           Giới thiệu về chương trình
         </p>
@@ -54,10 +67,10 @@ const NgayVietNamOBrazil = () => {
           Năm nay, “Ngày Việt Nam ở nước ngoài” được tổ chức tại thành phố Rio de Janeiro của Bra-xin trong các ngày 15-17/11, ngay trước thềm Hội nghị thượng đỉnh Nhóm các nền kinh tế phát triển và mới nổi hàng đầu thế giới (G20). Đây là
           thời điểm 20 nền kinh tế lớn nhất hành tinh và nhiều quốc gia thành viên cùng tụ họp, mang đến cả cơ hội lẫn thách thức cho việc tổ chức chương trình.{" "}
         </p>
-        <div className="flex gap-5">
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 mt-6">
           <iframe
-            className="w-full mt-6"
-            style={{ height: (size.width * 9) / 18 / 3 }}
+            // style={{ height: (size.width * 9) / 16 }}
+            className="w-full lg:h-52 md:h-64 h-72"
             src="https://www.youtube.com/embed/t0HwjG0PdJY?si=Bq5V-kLl7ORqwN1o"
             title="YouTube video player"
             frameborder="0"
@@ -66,8 +79,8 @@ const NgayVietNamOBrazil = () => {
             allowfullscreen
           ></iframe>
           <iframe
-            className="w-full mt-6"
-            style={{ height: (size.width * 9) / 18 / 3 }}
+            // style={{ height: (size.width * 9) / 16 }}
+            className="w-full lg:h-52 md:h-64 h-72"
             src="https://www.youtube.com/embed/u6KhytxVIzQ?si=J-82aMRk7XU2QFwc"
             title="YouTube video player"
             frameborder="0"
@@ -76,8 +89,8 @@ const NgayVietNamOBrazil = () => {
             allowfullscreen
           ></iframe>
           <iframe
-            className="w-full mt-6"
-            style={{ height: (size.width * 9) / 18 / 3 }}
+            // style={{ height: (size.width * 9) / 16 }}
+            className="w-full lg:h-52 md:h-64 h-72"
             src="https://www.youtube.com/embed/nTRVKpxqYJM?si=_K-eZ1CsUpua9YoZ"
             title="YouTube video player"
             frameborder="0"
@@ -234,7 +247,17 @@ const NgayVietNamOBrazil = () => {
           Tin tức cập nhật
         </p>
         {/* <p className="text-center">Đang cập nhật</p> */}
-        <div className="grid gap-x-6 gap-y-8 md:grid-cols-2 lg:grid-cols-3 ">{tintuc.map((item) => (item.link ? <Link to={item.link} target="_blank">{renderCardNew(item)}</Link> : <>{renderCardNew(item)}</>))}</div>
+        <div className="grid gap-x-6 gap-y-8 md:grid-cols-2 lg:grid-cols-3 ">
+          {tintuc.map((item) =>
+            item.link ? (
+              <Link to={item.link} target="_blank">
+                {renderCardNew(item)}
+              </Link>
+            ) : (
+              <>{renderCardNew(item)}</>
+            )
+          )}
+        </div>
       </div>
       <p className="mt-20 font-bold text-5xl text-center mb-10" style={{ fontFamily: "Philosopher", color: "#151748" }}>
         Hình ảnh sự kiện
