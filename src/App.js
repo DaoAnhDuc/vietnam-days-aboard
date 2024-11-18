@@ -18,12 +18,12 @@ export function slugify(text) {
 }
 
 export const getNews = async () => {
-  const response = await axios.get('/database/news.json')
-  return response.data
-} 
+  const response = await axios.get("/database/news.json");
+  return response.data;
+};
 function App() {
   return (
-    <div className="App">
+    <div className="App" style={{ backgroundImage: "url('/images/bg_watermark.jpg')", backgroundRepeat: "repeat", backgroundSize: "contain" }}>
       <Router>
         <Routes>
           <Route path="/" element={<HomePage />} />
