@@ -24,7 +24,7 @@ function HomePage() {
     <div>
       <Header />
       <div>
-        <img className="w-full" src="/images/banner2024.jpg"></img>
+        <img className="w-full" src={`/images/banner2024.jpg?=${window.VERSION}`}></img>
       </div>
       <div className=" mt-20 pb-16" style={{ borderBottom: "1px solid #dfdfdf" }}>
         <div className="container">
@@ -113,9 +113,9 @@ function HomePage() {
             Video giới thiệu chương trình
           </p>
           <iframe
-          className="w-full mt-6"
+            className="w-full mt-6"
             style={{ height: (size.width * 9) / 18 }}
-            src="https://www.youtube.com/embed/nTRVKpxqYJM?si=snHJyzBPQUAzSKtH"
+            src="https://www.youtube.com/embed/u6KhytxVIzQ?si=J-82aMRk7XU2QFwc"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -138,7 +138,7 @@ function HomePage() {
             Đơn vị tổ chức
           </p>
           <div className="text-center mt-6">
-            <img className="mx-auto" src="/images/logo-bongoaigiao.png" />
+            <img className="mx-auto" src={`/images/logo-bongoaigiao.png?=${window.VERSION}`} />
             <p className="uppercase mt-3">Bộ Ngoại Giao</p>
           </div>
           <div className="flex items-center gap-10 mt-6">

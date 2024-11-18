@@ -1,7 +1,9 @@
 import React from "react";
 import Footer from "../../HomePage/Footer/Footer";
+import { useResize } from "../NgayVietNamOThuySi";
 
 const NgayVietNamOBrazil = () => {
+  const [size, ref] = useResize();
   const tintuc = [
     {
       title: "Mỹ Latin và Trung Đông sẽ là điểm đến của Ngày Việt Nam ở nước ngoài 2024",
@@ -17,7 +19,7 @@ const NgayVietNamOBrazil = () => {
   return (
     <div className="">
       <img src="/images/key visual vn br.jpg" alt="" />
-      <div className="container">
+      <div className="container" ref={ref}>
         <p className="mt-20 font-bold text-5xl text-center mb-10" style={{ fontFamily: "Philosopher", color: "#151748" }}>
           Giới thiệu về chương trình
         </p>
@@ -30,6 +32,16 @@ const NgayVietNamOBrazil = () => {
           Năm nay, “Ngày Việt Nam ở nước ngoài” được tổ chức tại thành phố Rio de Janeiro của Bra-xin trong các ngày 15-17/11, ngay trước thềm Hội nghị thượng đỉnh Nhóm các nền kinh tế phát triển và mới nổi hàng đầu thế giới (G20). Đây là
           thời điểm 20 nền kinh tế lớn nhất hành tinh và nhiều quốc gia thành viên cùng tụ họp, mang đến cả cơ hội lẫn thách thức cho việc tổ chức chương trình.{" "}
         </p>
+        <iframe
+          className="w-full mt-6"
+          style={{ height: (size.width * 9) / 18 }}
+          src="https://www.youtube.com/embed/u6KhytxVIzQ?si=J-82aMRk7XU2QFwc"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
         {/* <button className="bg-red-600 text-white font-bold text-sm px-6 p-2 rounded w-fit mt-6">Xem chi tiết</button> */}
         <p className="mt-20 font-bold text-5xl text-center mb-4" style={{ fontFamily: "Philosopher", color: "#151748" }}>
           Nội dung chương trình
