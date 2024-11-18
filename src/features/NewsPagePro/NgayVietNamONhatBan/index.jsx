@@ -1,8 +1,23 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Footer from "../../HomePage/Footer/Footer";
 import { chunkArray } from "../NgayVietNamOAo";
 
 const NgayVietNamONhatBan = () => {
+  const renderItem = (item) => {
+    return (
+      <div className="" style={{ boxShadow: "0 0 10px rgba(0, 0, 0, 0.1))" }}>
+        <img className="w-full h-52 object-cover rounded-tl-xl rounded-tr-xl" src={`/images/${item.img}`} />
+        <div className="p-5 h-48">
+          <p className="line-clamp-3 text-black font-bold text-xl">{item.title}</p>
+          <p className="line-clamp-3 text-sm mt-2">{item.description}</p>
+        </div>
+        <div className="text-center text-red-600 py-3 font-bold text-sm flex justify-center items-center gap-2" style={{ borderTop: "1px solid #eee" }}>
+          Xem thêm <img className="h-3" src="/images/arrow-red.svg" />
+        </div>
+      </div>
+    );
+  };
   return (
     <div className="">
       <img src="/images/banner_nhat.jpg" alt="" />
@@ -35,6 +50,18 @@ const NgayVietNamONhatBan = () => {
         <div className="grid gap-x-6 gap-y-8 md:grid-cols-2 lg:grid-cols-3 ">
           {[
             {
+              title: "“Ngày Việt Nam tại Fukuoka 2023”",
+              description: `Vào ngày 29 – 30/11/2023 tại Fukuoka, Nhật Bản chương trình “Ngày Việt Nam tại Nhật Bản 2023” do Vụ Văn hóa và UNESCO Bộ Ngoại giao Việt Nam phối hợp với Tổng Lãnh sự quán Việt Nam tại Fukuoka tổ chức, nhân dịp Kỷ niệm 50 năm thiết lập quan hệ ngoại giao Việt Nam – Nhật Bản.`,
+              img: "new_nhat_4.jpg",
+              link: "https://vnconsulate-fukuoka.org/vi/ngay-viet-nam-tai-fukuoka-2023/",
+            },
+            {
+              title: `"Ngày Việt Nam tại Nhật Bản 2023" - Tôn vinh tình hữu nghị và văn hóa Việt Nam`,
+              description: `ừa diễn ra sôi nổi và ấn tượng tại tỉnh Fukuoka (Nhật Bản) ngày 30/11, chương trình “Ngày Việt Nam tại Nhật Bản 2023” không chỉ quảng bá hình ảnh, đất nước và con người Việt Nam tươi đẹp mà còn góp phần thắt chặt tình hữu nghị bền chặt giữa hai quốc gia, hai dân tộc.`,
+              img: "new_nhat_5.jpg",
+              link: "https://nhandan.vn/ngay-viet-nam-tai-nhat-ban-2023-ton-vinh-tinh-huu-nghi-va-van-hoa-viet-nam-post785552.html?gidzl=-aPT6JA7IMtvKLmUCPX9QVDJMXqcd4izvLPPIYd873hW1bn8Vij9DBPLMqbwoKarv05R5pNx-2H4C8P9RG",
+            },
+            {
               title: "Ngày Việt Nam tại Nhật Bản 2023: Tôn vinh tình hữu nghị nửa thế kỷ",
               description: `Chương trình "Ngày Việt Nam tại Nhật Bản 2023" sẽ chính thức diễn ra vào ngày 30/11/2023 tại Đại học Y khoa Kyushu, tỉnh Fukuoka, Nhật Bản.`,
               img: "new_nhat.jpg",
@@ -49,18 +76,15 @@ const NgayVietNamONhatBan = () => {
               description: "Không gian văn hóa đậm đà bản sắc và chương trình biểu diễn nghệ thuật độc đáo của “Ngày Việt Nam tại Nhật Bản 2023” để lại nhiều ấn tượng trong lòng công chúng.",
               img: "new_nhat_3.jpg",
             },
-          ].map((item) => (
-            <div className="" style={{ boxShadow: "0 0 10px rgba(0, 0, 0, 0.1))" }}>
-              <img className="w-full h-52 object-cover rounded-tl-xl rounded-tr-xl" src={`/images/${item.img}`} />
-              <div className="p-5 h-48">
-                <p className="line-clamp-3 text-black font-bold text-xl">{item.title}</p>
-                <p className="line-clamp-3 text-sm mt-2">{item.description}</p>
-              </div>
-              <div className="text-center text-red-600 py-3 font-bold text-sm flex justify-center items-center gap-2" style={{ borderTop: "1px solid #eee" }}>
-                Xem thêm <img className="h-3" src="/images/arrow-red.svg" />
-              </div>
-            </div>
-          ))}
+          ].map((item) =>
+            item.link ? (
+              <Link to={item.link} target="_blank">
+                {renderItem(item)}
+              </Link>
+            ) : (
+              <>{renderItem(item)}</>
+            )
+          )}
         </div>
       </div>
       <p className="mt-20 font-bold text-5xl text-center mb-10" style={{ fontFamily: "Philosopher", color: "#151748" }}>

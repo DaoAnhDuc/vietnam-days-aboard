@@ -71,7 +71,7 @@ const NgayVietNamOARap = () => {
                   <p>- Mở cửa tự do</p>
                 </td>
               </tr>
-              <tr style={{ borderBottom: "1px solid #dfdfdf" }}>
+              {/* <tr style={{ borderBottom: "1px solid #dfdfdf" }}>
                 <td className="p-2">
                   <b>11:30-13:30</b>
                 </td>
@@ -80,7 +80,7 @@ const NgayVietNamOARap = () => {
                   <p>- Địa điểm: Học viện quản lý du lịch và khách sạn</p>
                   <p>- Thành phần: Bếp trưởng Nguyễn Thường Quân (VICA), các học viên của học viện</p>
                 </td>
-              </tr>
+              </tr> */}
               <tr style={{ borderBottom: "1px solid #dfdfdf" }}>
                 <td colSpan={2} className="p-2 bg-red-600 text-white font-bold text-center">
                   Chủ nhật, 15/12/2024

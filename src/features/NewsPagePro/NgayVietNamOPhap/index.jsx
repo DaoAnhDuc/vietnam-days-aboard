@@ -1,8 +1,23 @@
 import React from "react";
 import { chunkArray } from "../NgayVietNamOAo";
 import Footer from "../../HomePage/Footer/Footer";
+import { Link } from "react-router-dom";
 
 const NgayVietNamOPhap = () => {
+  const renderItem = (item) => {
+    return (
+      <div className="" style={{ boxShadow: "0 0 10px rgba(0, 0, 0, 0.1))" }}>
+        <img className="w-full h-52 object-cover rounded-tl-xl rounded-tr-xl" src={`/images/${item.img}`} />
+        <div className="p-5 h-48">
+          <p className="line-clamp-3 text-black font-bold text-xl">{item.title}</p>
+          <p className="line-clamp-3 text-sm mt-2">{item.description}</p>
+        </div>
+        <div className="text-center text-red-600 py-3 font-bold text-sm flex justify-center items-center gap-2" style={{ borderTop: "1px solid #eee" }}>
+          Xem thêm <img className="h-3" src="/images/arrow-red.svg" />
+        </div>
+      </div>
+    );
+  };
   return (
     <div className="">
       <img src="/images/banner_phap.jpg" className="mx-auto" alt="" />
@@ -35,23 +50,34 @@ const NgayVietNamOPhap = () => {
         <div className="grid gap-x-6 gap-y-8 md:grid-cols-2 lg:grid-cols-3 ">
           {[
             {
+              title: "Ngày Việt Nam tại Pháp 2023",
+              description:
+                "Trong khuôn khổ chuỗi hoạt động quảng bá hình ảnh Việt Nam tại Pháp nhân kỷ niệm 50 năm Ngày thiết lập quan hệ ngoại giao và 10 năm Đối tác chiến lược Việt - Pháp, trong hai ngày 8-9/11/2023 tại Paris, Ngày Việt Nam tại Pháp 2023 đón đông đảo bạn bè Pháp và bà con kiều bào tới tham dự tại Trung tâm văn hóa Việt Nam tại Pháp.",
+              img: "new_phap3.jpg",
+              link: "https://ambassade-vietnam.com/ngay-viet-nam-tai-phap-2023/",
+            },
+            {
+              title: "'Ngày Việt Nam tại Pháp 2023': Khám phá văn hóa Việt qua các hoạt động trải nghiệm đa giác quan",
+              description:
+                "Trong hai ngày 8-9/11, chương trình “Ngày Việt Nam tại Pháp 2023” đã mang đến trải nghiệm văn hóa đa giác quan thông qua nhiều hoạt động như thưởng thức Phở Thìn, chơi nhạc cụ dân tộc, mặc cổ phục và làm tranh dân gian.",
+              img: "new_phap2.jpg",
+              link: "https://baochinhphu.vn/ngay-viet-nam-tai-phap-2023-kham-pha-van-hoa-viet-qua-cac-hoat-dong-trai-nghiem-da-giac-quan-102231110174135407.htm",
+            },
+            {
               title: "'Ngày Việt Nam tại Pháp 2023' - nhịp cầu văn hóa thắt chặt tình hữu nghị Việt-Pháp",
               description:
                 "Chương trình “Ngày Việt Nam tại Pháp 2023” sẽ diễn ra vào ngày 8-9/11 tại Paris, thủ đô Cộng hòa Pháp nhân dịp kỷ niệm 50 năm hai nước thiết lập quan hệ ngoại giao (1973-2023) và 10 năm quan hệ đối tác chiến lược Việt Nam-Pháp (2013-2023).",
               img: "new_phap.jpg",
             },
-          ].map((item) => (
-            <div className="" style={{ boxShadow: "0 0 10px rgba(0, 0, 0, 0.1))" }}>
-              <img className="w-full h-52 object-cover rounded-tl-xl rounded-tr-xl" src={`/images/${item.img}`} />
-              <div className="p-5 h-48">
-                <p className="line-clamp-3 text-black font-bold text-xl">{item.title}</p>
-                <p className="line-clamp-3 text-sm mt-2">{item.description}</p>
-              </div>
-              <div className="text-center text-red-600 py-3 font-bold text-sm flex justify-center items-center gap-2" style={{ borderTop: "1px solid #eee" }}>
-                Xem thêm <img className="h-3" src="/images/arrow-red.svg" />
-              </div>
-            </div>
-          ))}
+          ].map((item) =>
+            item.link ? (
+              <Link to={item.link} target="_blank">
+                {renderItem(item)}
+              </Link>
+            ) : (
+              <>{renderItem(item)}</>
+            )
+          )}
         </div>
       </div>
       <p className="mt-20 font-bold text-5xl text-center mb-10" style={{ fontFamily: "Philosopher", color: "#151748" }}>
