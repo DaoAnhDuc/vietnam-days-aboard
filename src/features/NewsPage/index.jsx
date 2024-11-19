@@ -31,7 +31,7 @@ function NewsPage() {
   const [data, setData] = useState([]);
   useEffect(() => {
     getData();
-    return () => { };
+    return () => {};
   }, []);
 
   const getData = async () => {
@@ -39,20 +39,20 @@ function NewsPage() {
       const data = await getNews();
       document.title = "Tin tức";
       setData(data);
-    } catch (error) { }
+    } catch (error) {}
   };
 
   return (
-    <div >
+    <div>
       <Header />
       <img src="/images/tin-tuc.jpg" alt="" />
       <div className="mt-10 pb-10">
         <div className="container">
-              <p className="font-bold text-5xl text-center mb-10" style={{ fontFamily: "Philosopher", color: "#151748" }}>
-                Tin tức
-              </p>
-          {
-            false && <>
+          <p className="font-bold text-5xl text-center mb-10" style={{ fontFamily: "Philosopher", color: "#151748" }}>
+            Tin tức
+          </p>
+          {false && (
+            <>
               <div>
                 <p className="font-bold text-xl" style={{ color: "#151748" }}>
                   Chuyên mục
@@ -75,12 +75,15 @@ function NewsPage() {
                 Tin tức liên quan
               </p>
             </>
-          }
+          )}
           <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3 mt-2">
             {data.map((item) => (
-              <div className="flex flex-col cursor-pointer bg-white" onClick={() => navigate(`/tin-tuc/${slugify(item.title)}`)} style={{ boxShadow: "0px 5px 20px 5px rgba(0, 0, 0, 0.1)", padding: "20px", paddingBottom: 10 }}>
+              <div
+                className="flex flex-col cursor-pointer bg-white"
+                style={{ boxShadow: "0px 5px 20px 5px rgba(0, 0, 0, 0.1)", padding: "20px", paddingBottom: 10 }}
+              >
                 <div style={{ flex: 1 }}>
-                  <Link to={`/tin-tuc/${slugify(item.title)}`}>
+                  <Link to={item.link ? item.link : `/tin-tuc/${slugify(item.title)}`} target={item.link ? "_blank" : "_self"}>
                     {/* <img className="w-full h-52 object-cover" src="/images/default.png" /> */}
                     <div className="flex items-center gap-2 mt-2">
                       <img className="h-6" src="/images/clock.png" alt="" />
@@ -92,7 +95,7 @@ function NewsPage() {
                     <p className="mt-2">{item.description}</p>
                   </Link>
                 </div>
-                <Link to={`/tin-tuc/${slugify(item.title)}`}>
+                <Link to={item.link ? item.link : `/tin-tuc/${slugify(item.title)}`} target={item.link ? "_blank" : "_self"}>
                   <div className=" text-red-600 py-3 font-bold text-sm flex items-center gap-2">
                     Xem thêm <img className="h-3" src="/images/arrow-red.svg" />
                   </div>

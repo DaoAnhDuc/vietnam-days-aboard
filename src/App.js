@@ -24,7 +24,19 @@ export const getNews = async () => {
 function App() {
   return (
     <div className="App">
-      <div style={{ backgroundImage: "url('/images/bg_watermark.jpg')", backgroundRepeat: "no-repeat", backgroundSize: "contain", position: "fixed", inset: 0, zIndex: -1, opacity: 0.4, backgroundPosition: 'center' }}></div>
+      <div
+        style={{
+          backgroundImage: "url('/images/bg_watermark.jpg')",
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "contain",
+          position: "fixed",
+          inset: 0,
+          zIndex: -1,
+          opacity: 0.4,
+          backgroundPosition: "center",
+          animation: 'spin 60s linear infinite', /* Xoay ảnh */
+        }}
+      ></div>
       <Router>
         <Routes>
           <Route path="/" element={<HomePage />} />
