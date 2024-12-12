@@ -18,7 +18,7 @@ function NewsPageDetail() {
     try {
       const data = await getNews();
       const newsData = data.find((i) => slugify(i.title) === newsId);
-      const response = await axios.get(`/${newsData.template}`);
+      const response = await axios.get(`/${newsData.template}?v=`+ Math.random());
       document.title = newsData?.title || "Vietnam days abroad";
       setLoading(false);
       setData({
@@ -43,7 +43,7 @@ function NewsPageDetail() {
           </Link>
         </div>
       )}
-      <div className="min-h-screen" style={{ maxWidth: 680, margin: "0 auto" }}>
+      <div className="min-h-screen px-3" style={{ maxWidth: 700, margin: "0 auto" }}>
         {data && (
           <>
             <div className="mt-8">

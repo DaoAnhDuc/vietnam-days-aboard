@@ -4,7 +4,7 @@ import axios from "axios";
 const initialState = [];
 
 export const fetchNews = createAsyncThunk("news/fetch", async () => {
-  return await axios.get("/database/news.json");
+  return await axios.get("/database/news.json?v="+ Math.random());
 });
 
 export const newsSlice = createSlice({

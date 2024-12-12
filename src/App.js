@@ -18,7 +18,7 @@ export function slugify(text) {
 }
 
 export const getNews = async () => {
-  const response = await axios.get("/database/news.json");
+  const response = await axios.get("/database/news.json?v="+ Math.random());
   return response.data;
 };
 function App() {
