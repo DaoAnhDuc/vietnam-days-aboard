@@ -110,16 +110,17 @@ function HomePage() {
           </button> */}
         </div>
       </div>
-      <div className="mt-20 pb-10">
+      <div className="mt-16 pb-10">
         <div className="container" ref={ref}>
+          <video src="https://www.youtube.com/embed/W5P9JG-Th5w?si=FRl5e63I86a8yIwB" autoPlay></video>
           <p className="font-bold text-5xl text-center" style={{ fontFamily: "Philosopher", color: "#151748" }}>
             Video giới thiệu chương trình
           </p>
-          <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 mt-10">
+          <div className="grid lg:grid-cols-2 md:grid-cols-1 grid-cols-1 gap-4 mt-10">
             <iframe
-              // style={{ height: (size.width * 9) / 16 }}
-              className="w-full lg:h-52 md:h-64 h-72"
-              src="https://www.youtube.com/embed/t0HwjG0PdJY?si=Bq5V-kLl7ORqwN1o"
+              style={{ height: size.width > 1024 ? (size.width * 9) / 18 / 2 : (size.width * 9) / 18 }}
+              className="w-full lg:h-64 md:h-72"
+              src="https://www.youtube.com/embed/SI_H3VT9mZ4?si=No2uw2d-WX_J13o8"
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -127,16 +128,16 @@ function HomePage() {
               allowfullscreen
             ></iframe>
             <iframe
-              // style={{ height: (size.width * 9) / 16 }}
-              className="w-full lg:h-52 md:h-64 h-72"
-              src="https://www.youtube.com/embed/u6KhytxVIzQ?si=J-82aMRk7XU2QFwc"
+              style={{ height: size.width > 1024 ? (size.width * 9) / 18 / 2 : (size.width * 9) / 18 }}
+              className="w-full lg:h-64 md:h-72"
+              src="https://www.youtube.com/embed/W5P9JG-Th5w?si=FRl5e63I86a8yIwB"
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerpolicy="strict-origin-when-cross-origin"
               allowfullscreen
             ></iframe>
-            <iframe
+            {/* <iframe
               // style={{ height: (size.width * 9) / 16 }}
               className="w-full lg:h-52 md:h-64 h-72"
               src="https://www.youtube.com/embed/nTRVKpxqYJM?si=_K-eZ1CsUpua9YoZ"
@@ -145,9 +146,9 @@ function HomePage() {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerpolicy="strict-origin-when-cross-origin"
               allowfullscreen
-            ></iframe>
+            ></iframe> */}
           </div>
-          <iframe
+          {/* <iframe
             className="w-full mt-3"
             style={{ height: (size.width * 9) / 16 }}
             src="https://www.youtube.com/embed/hpfTPOOrIKI?si=9spt5UKJt9PTrXRR"
@@ -156,7 +157,7 @@ function HomePage() {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin"
             allowfullscreen
-          ></iframe>
+          ></iframe> */}
         </div>
       </div>
       <div className=" mt-20 pb-10">
