@@ -13,9 +13,9 @@ const NgayVietNamOARap = () => {
       hasLocalLink: true,
     },
     {
-      title: "Ngày Việt Nam tại Ả-rập Xê-út 2024: Hành trình quảng bá văn hóa Việt tại Trung Đông",
-      description: `Riyadh - thủ đô Ả-rập Xê-út, sẽ trở thành điểm dừng chân tiếp theo của chương trình "Ngày Việt Nam ở nước ngoài 2024" diễn ra từ ngày 13-15/12. Đây là cơ hội đặc biệt để văn hóa Việt Nam lan tỏa sâu rộng tại khu vực Trung Đông, với chủ đề ý nghĩa: “Hội tụ tinh hoa ngàn năm văn hóa - Vươn mình trong kỷ nguyên giàu mạnh, thịnh vượng”.`,
-      img: "img9738-17339124794221211351092.jpg",
+      title: "Nhiều trải nghiệm hấp dẫn trong “Ngày Việt Nam tại Ả-rập Xê-út 2024”!",
+      description: `Tạm biệt Rio de Janiero của đất nước Bra-xin sôi động và sắc màu, “Ngày Việt Nam ở nước ngoài 2024” lần đầu tiên lan tỏa hương sắc tinh hoa Việt Nam tại Ả-rập Xê-út của Trung Đông huyền diệu. Chương trình là hoạt động trọng tâm kỷ niệm 25 năm quan hệ ngoại giao Việt Nam - Ả-rập Xê-út.`,
+      img: "ngay-viet-nam-tai-a-rap-xe-ut5.jpg",
       create: "11 Tháng Mười Hai, 2024",
       hasLocalLink: true,
     },
