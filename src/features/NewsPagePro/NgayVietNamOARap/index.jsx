@@ -87,6 +87,38 @@ const NgayVietNamOARap = () => {
         <p className="mt-20 font-bold text-5xl text-center mb-10" style={{ fontFamily: "Philosopher", color: "#151748" }}>
           Video chương trình
         </p>
+        <div className="grid lg:grid-cols-2 md:grid-cols-1 grid-cols-1 gap-4 mt-10">
+          <iframe
+            style={{ height: size.width > 1024 ? (size.width * 9) / 18 / 2 : (size.width * 9) / 18 }}
+            className="w-full lg:h-64 md:h-72"
+            src="https://www.youtube.com/embed/SI_H3VT9mZ4?si=No2uw2d-WX_J13o8"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+          <iframe
+            style={{ height: size.width > 1024 ? (size.width * 9) / 18 / 2 : (size.width * 9) / 18 }}
+            className="w-full lg:h-64 md:h-72"
+            src="https://www.youtube.com/embed/W5P9JG-Th5w?si=FRl5e63I86a8yIwB"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+          {/* <iframe
+              // style={{ height: (size.width * 9) / 16 }}
+              className="w-full lg:h-52 md:h-64 h-72"
+              src="https://www.youtube.com/embed/nTRVKpxqYJM?si=_K-eZ1CsUpua9YoZ"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe> */}
+        </div>
         <iframe
           className="w-full mt-3"
           style={{ height: (size.width * 8) / 16 }}
