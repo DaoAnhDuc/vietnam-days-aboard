@@ -148,16 +148,16 @@ function HomePage() {
               allowfullscreen
             ></iframe> */}
           </div>
-          {/* <iframe
+          <iframe
             className="w-full mt-3"
-            style={{ height: (size.width * 9) / 16 }}
-            src="https://www.youtube.com/embed/hpfTPOOrIKI?si=9spt5UKJt9PTrXRR"
+            style={{ height: (size.width * 8) / 16 }}
+            src="https://www.youtube.com/embed/xyPdjCanDL0?si=PEb8x8a3w_x_GxCP"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin"
             allowfullscreen
-          ></iframe> */}
+          ></iframe>
         </div>
       </div>
       <div className=" mt-20 pb-10">

@@ -2,9 +2,19 @@ import React from "react";
 import Footer from "../../HomePage/Footer/Footer";
 import { Link } from "react-router-dom";
 import { slugify } from "../../../App";
+import { useResize } from "../NgayVietNamOThuySi";
 
 const NgayVietNamOARap = () => {
+  const [size, ref] = useResize();
   const tintuc = [
+    {
+      title: "Đại sứ quán Việt Nam tại Saudi Arabia họp báo thông tin về đất nước và Ngày Việt Nam tại Riyadh",
+      description:
+        "Chương trình Ngày Việt Nam tại Saudi Arabia nhằm tăng cường giới thiệu, quảng bá về văn hóa, đất nước và con người đến đông đảo công chúng sở tại.",
+      img: "a34cf651181ef140a80f.jpg.webp",
+      link: "https://baomoi.com/dai-su-quan-viet-nam-tai-saudi-arabia-hop-bao-thong-tin-ve-dat-nuoc-va-ngay-viet-nam-tai-riyadh-c50976718.epi",
+      create: "13 Tháng Mười Hai, 2024",
+    },
     {
       title: 'Họp báo chính thức khởi động "Ngày Việt Nam tại Ả - rập Xê - út 2024"',
       description: `Ngày 11/12, tại thủ đô Riyadh, Đại sứ quán Việt Nam tại Ả - rập Xê - út đã phối hợp với Bộ Ngoại giao Việt Nam tổ chức họp báo giới thiệu chương trình \"Ngày Việt Nam tại Ả - rập Xê - út 2024\" với đại diện các cơ quan thông tấn báo chí địa phương và quốc tế.`,
@@ -57,7 +67,7 @@ const NgayVietNamOARap = () => {
   return (
     <div className="">
       <img className="mx-auto" src="/images/banner_arap.png" alt="" />
-      <div className="container">
+      <div className="container" ref={ref}>
         <p className="mt-20 font-bold text-5xl text-center mb-10" style={{ fontFamily: "Philosopher", color: "#151748" }}>
           Giới thiệu về chương trình
         </p>
@@ -74,6 +84,19 @@ const NgayVietNamOARap = () => {
           thực hiện các tác phẩm sơn mài tinh xảo. Các nghệ sĩ chơi nhạc cụ truyền thống còn nhập vai thành “tố nữ" để tái hiện bộ tranh Tứ Bình giữa đời thực,
           hứa hẹn là cách quảng bá văn hoá Việt vô cùng độc đáo, gây ấn tượng sâu đậm trong lòng khách tham dự.
         </p>
+        <p className="mt-20 font-bold text-5xl text-center mb-10" style={{ fontFamily: "Philosopher", color: "#151748" }}>
+          Video chương trình
+        </p>
+        <iframe
+          className="w-full mt-3"
+          style={{ height: (size.width * 8) / 16 }}
+          src="https://www.youtube.com/embed/xyPdjCanDL0?si=PEb8x8a3w_x_GxCP"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
         {/* <button className="bg-red-600 text-white font-bold text-sm px-6 p-2 rounded w-fit mt-6">Xem chi tiết</button> */}
         <p className="mt-20 font-bold text-5xl text-center mb-4" style={{ fontFamily: "Philosopher", color: "#151748" }}>
           Nội dung chương trình
