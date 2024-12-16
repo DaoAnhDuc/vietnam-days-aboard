@@ -8,9 +8,15 @@ const NgayVietNamOARap = () => {
   const [size, ref] = useResize();
   const tintuc = [
     {
+      title: "“Ngày Việt Nam ở nước ngoài 2024”: Văn hóa Việt chạm đến trái tim công chúng Trung Đông",
+      description: "Chương trình “Ngày Việt Nam tại Ả-rập Xê-út 2024” đã trở thành một hành trình đầy cảm xúc, nơi văn hóa Việt Nam được truyền tải đầy tinh tế và chạm đến trái tim của đông đảo bạn bè quốc tế. ",
+      img: "1612.1.png",
+      hasLocalLink: true,
+      create: "16 Tháng Mười Hai, 2024",
+    },
+    {
       title: "Đại sứ quán Việt Nam tại Saudi Arabia họp báo thông tin về đất nước và Ngày Việt Nam tại Riyadh",
-      description:
-        "Chương trình Ngày Việt Nam tại Saudi Arabia nhằm tăng cường giới thiệu, quảng bá về văn hóa, đất nước và con người đến đông đảo công chúng sở tại.",
+      description: "Chương trình Ngày Việt Nam tại Saudi Arabia nhằm tăng cường giới thiệu, quảng bá về văn hóa, đất nước và con người đến đông đảo công chúng sở tại.",
       img: "a34cf651181ef140a80f.jpg.webp",
       link: "https://baomoi.com/dai-su-quan-viet-nam-tai-saudi-arabia-hop-bao-thong-tin-ve-dat-nuoc-va-ngay-viet-nam-tai-riyadh-c50976718.epi",
       create: "13 Tháng Mười Hai, 2024",
