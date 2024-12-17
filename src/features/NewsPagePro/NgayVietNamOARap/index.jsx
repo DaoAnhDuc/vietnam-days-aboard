@@ -78,21 +78,40 @@ const NgayVietNamOARap = () => {
           Giới thiệu về chương trình
         </p>
         <p>
-          Chương trình “Ngày Việt Nam ở nước ngoài 2024” với chủ đề “Hội tụ tinh hoa ngàn năm, vươn mình trong kỷ nguyên mới” sẽ được tổ chức tại thủ đô Riyadh
-          của Ả-rập Xê-út nhân dịp kỷ niệm 25 năm quan hệ ngoại giao Việt Nam – Ả-rập Xê-út.Chương trình do Vụ Ngoại giao văn hoá và UNESCO - Bộ Ngoại giao chủ
-          trì, phối hợp tổ chức với các đối tác liên quan. Đây là năm thứ 12 chương trình “Ngày Việt Nam ở nước ngoài” được tổ chức, với mục tiêu tăng cường
-          quan hệ hữu nghị, đối tác giữa Việt Nam và địa bàn được lựa chọn, đồng thời quảng bá hình ảnh đất nước, con người và văn hoá Việt tới cộng đồng quốc
-          tế.
+          Chương trình “Ngày Việt Nam ở nước ngoài 2024” với chủ đề “Hội tụ tinh hoa ngàn năm, vươn mình trong kỷ nguyên mới” sẽ được tổ chức tại thủ đô Riyadh của Ả-rập Xê-út nhân dịp kỷ niệm 25 năm quan hệ ngoại giao Việt Nam – Ả-rập
+          Xê-út.Chương trình do Vụ Ngoại giao văn hoá và UNESCO - Bộ Ngoại giao chủ trì, phối hợp tổ chức với các đối tác liên quan. Đây là năm thứ 12 chương trình “Ngày Việt Nam ở nước ngoài” được tổ chức, với mục tiêu tăng cường quan hệ
+          hữu nghị, đối tác giữa Việt Nam và địa bàn được lựa chọn, đồng thời quảng bá hình ảnh đất nước, con người và văn hoá Việt tới cộng đồng quốc tế.
         </p>
         <p className="mt-3">
-          Năm nay chương trình “Ngày Việt Nam tại Ả-rập Xê-út” sẽ được tổ chức trong khoảng 13-15/12 tại thủ đô Riyadh. Chương trình tiếp tục giới thiệu Không
-          gian văn hoá Việt Nam đậm đà bản sắc tới công chúng sở tại, với nhiều trải nghiệm độc đáo như nặn Tò He truyền thống, in tranh dân gian Đông Hồ và
-          thực hiện các tác phẩm sơn mài tinh xảo. Các nghệ sĩ chơi nhạc cụ truyền thống còn nhập vai thành “tố nữ" để tái hiện bộ tranh Tứ Bình giữa đời thực,
-          hứa hẹn là cách quảng bá văn hoá Việt vô cùng độc đáo, gây ấn tượng sâu đậm trong lòng khách tham dự.
+          Năm nay chương trình “Ngày Việt Nam tại Ả-rập Xê-út” sẽ được tổ chức trong khoảng 13-15/12 tại thủ đô Riyadh. Chương trình tiếp tục giới thiệu Không gian văn hoá Việt Nam đậm đà bản sắc tới công chúng sở tại, với nhiều trải nghiệm
+          độc đáo như nặn Tò He truyền thống, in tranh dân gian Đông Hồ và thực hiện các tác phẩm sơn mài tinh xảo. Các nghệ sĩ chơi nhạc cụ truyền thống còn nhập vai thành “tố nữ" để tái hiện bộ tranh Tứ Bình giữa đời thực, hứa hẹn là cách
+          quảng bá văn hoá Việt vô cùng độc đáo, gây ấn tượng sâu đậm trong lòng khách tham dự.
         </p>
         <p className="mt-20 font-bold text-5xl text-center mb-10" style={{ fontFamily: "Philosopher", color: "#151748" }}>
           Video chương trình
         </p>
+        <div className="grid lg:grid-cols-2 md:grid-cols-1 grid-cols-1 gap-4 mt-10">
+          <iframe
+            style={{ height: size.width > 1024 ? (size.width * 9) / 18 / 2 : (size.width * 9) / 18 }}
+            className="w-full lg:h-64 md:h-72"
+            src="https://www.youtube.com/embed/FEoOru1dZgI?si=K8OinWybOe71wa_5"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+          <iframe
+            style={{ height: size.width > 1024 ? (size.width * 9) / 18 / 2 : (size.width * 9) / 18 }}
+            className="w-full lg:h-64 md:h-72"
+            src="https://www.youtube.com/embed/xyPdjCanDL0?si=PEb8x8a3w_x_GxCP"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
         <div className="grid lg:grid-cols-2 md:grid-cols-1 grid-cols-1 gap-4 mt-10">
           <iframe
             style={{ height: size.width > 1024 ? (size.width * 9) / 18 / 2 : (size.width * 9) / 18 }}
@@ -125,7 +144,7 @@ const NgayVietNamOARap = () => {
               allowfullscreen
             ></iframe> */}
         </div>
-        <iframe
+        {/* <iframe
           className="w-full mt-3"
           style={{ height: (size.width * 8) / 16 }}
           src="https://www.youtube.com/embed/xyPdjCanDL0?si=PEb8x8a3w_x_GxCP"
@@ -134,7 +153,7 @@ const NgayVietNamOARap = () => {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           referrerpolicy="strict-origin-when-cross-origin"
           allowfullscreen
-        ></iframe>
+        ></iframe> */}
         {/* <button className="bg-red-600 text-white font-bold text-sm px-6 p-2 rounded w-fit mt-6">Xem chi tiết</button> */}
         <p className="mt-20 font-bold text-5xl text-center mb-4" style={{ fontFamily: "Philosopher", color: "#151748" }}>
           Nội dung chương trình
@@ -156,10 +175,7 @@ const NgayVietNamOARap = () => {
                 <td className="p-2">
                   <p>Không gian văn hóa Việt Nam tại Ả-rập Xê-út </p>
                   <p>
-                    <i>
-                      (Các nội dung: Triển lãm ảnh quan hệ hai nước, Triển lãm ảnh Việt Nam, 3 nghệ nhân Đông Hồ- Tò he-Sơn mài, Tranh tố nữ bản live/ Biểu diễn
-                      nhạc cụ dân tộc).
-                    </i>
+                    <i>(Các nội dung: Triển lãm ảnh quan hệ hai nước, Triển lãm ảnh Việt Nam, 3 nghệ nhân Đông Hồ- Tò he-Sơn mài, Tranh tố nữ bản live/ Biểu diễn nhạc cụ dân tộc).</i>
                   </p>
                   <p>- Tầng 1, Cultural Palace</p>
                   <p>- Mở cửa tự do</p>
