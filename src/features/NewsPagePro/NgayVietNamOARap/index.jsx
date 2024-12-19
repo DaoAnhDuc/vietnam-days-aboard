@@ -9,14 +9,24 @@ const NgayVietNamOARap = () => {
   const tintuc = [
     {
       title: "“Ngày Việt Nam ở nước ngoài 2024”: Văn hóa Việt chạm đến trái tim công chúng Trung Đông",
-      description: "Chương trình “Ngày Việt Nam tại Ả-rập Xê-út 2024” đã trở thành một hành trình đầy cảm xúc, nơi văn hóa Việt Nam được truyền tải đầy tinh tế và chạm đến trái tim của đông đảo bạn bè quốc tế. ",
+      description:
+        "Chương trình “Ngày Việt Nam tại Ả-rập Xê-út 2024” đã trở thành một hành trình đầy cảm xúc, nơi văn hóa Việt Nam được truyền tải đầy tinh tế và chạm đến trái tim của đông đảo bạn bè quốc tế. ",
       img: "1612.1.png",
       hasLocalLink: true,
       create: "16 Tháng Mười Hai, 2024",
     },
     {
+      title: "Khách quốc tế xếp hàng dài chờ thưởng thức phở Việt Nam",
+      description:
+        "Hàng nghìn lượt khách đã tham dự ngày đầu tiên của sự kiện Ngày Việt Nam tại Ả Rập Xê Út 2024, tận hưởng không gian đậm đà bản sắc Việt, trải nghiệm các hoạt động văn hóa độc đáo và thưởng thức những món ăn nổi tiếng do chính các đầu bếp danh tiếng từ Việt Nam chế biến.",
+      img: "ngay-viet-nam-tai-a-rap-xe-ut2-17341886440941725656104.webp",
+      link: "https://thanhnien.vn/khach-quoc-te-xep-hang-dai-cho-thuong-thuc-pho-viet-nam-185241214221707394.htm?gidzl=qmlfKvIMp2hG7EXKbupBBDiGx561q9yWn42pMuNMmoN9HEPOZjdBTyf4xLY7qCWcbH3i2JPqf1L9bfVCAW",
+      create: "14 Tháng Mười Hai, 2024",
+    },
+    {
       title: "Đại sứ quán Việt Nam tại Saudi Arabia họp báo thông tin về đất nước và Ngày Việt Nam tại Riyadh",
-      description: "Chương trình Ngày Việt Nam tại Saudi Arabia nhằm tăng cường giới thiệu, quảng bá về văn hóa, đất nước và con người đến đông đảo công chúng sở tại.",
+      description:
+        "Chương trình Ngày Việt Nam tại Saudi Arabia nhằm tăng cường giới thiệu, quảng bá về văn hóa, đất nước và con người đến đông đảo công chúng sở tại.",
       img: "a34cf651181ef140a80f.jpg.webp",
       link: "https://baomoi.com/dai-su-quan-viet-nam-tai-saudi-arabia-hop-bao-thong-tin-ve-dat-nuoc-va-ngay-viet-nam-tai-riyadh-c50976718.epi",
       create: "13 Tháng Mười Hai, 2024",
