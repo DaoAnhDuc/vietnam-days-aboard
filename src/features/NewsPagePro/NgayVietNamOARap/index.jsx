@@ -8,6 +8,14 @@ const NgayVietNamOARap = () => {
   const [size, ref] = useResize();
   const tintuc = [
     {
+      title: "'Ngày Việt Nam ở nước ngoài': Lan tỏa hình ảnh đất nước đến Mỹ Latin, Trung Đông",
+      description:
+        "“Ngày Việt Nam ở nước ngoài” là chương trình quảng bá quốc gia thường niên được Thủ tướng Chính phủ giao Vụ Ngoại giao văn hoá và UNESCO, Bộ Ngoại giao chủ trì tổ chức từ năm 2010. ",
+      img: "2112.1.webp",
+      link: "https://www.vietnamplus.vn/ngay-viet-nam-o-nuoc-ngoai-lan-toa-hinh-anh-dat-nuoc-den-my-latin-trung-dong-post1003275.vnp",
+      create: "20 Tháng Mười Hai, 2024",
+    },
+    {
       title: "“Ngày Việt Nam ở nước ngoài 2024”: Văn hóa Việt chạm đến trái tim công chúng Trung Đông",
       description:
         "Chương trình “Ngày Việt Nam tại Ả-rập Xê-út 2024” đã trở thành một hành trình đầy cảm xúc, nơi văn hóa Việt Nam được truyền tải đầy tinh tế và chạm đến trái tim của đông đảo bạn bè quốc tế. ",
