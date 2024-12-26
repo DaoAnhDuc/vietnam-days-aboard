@@ -4,7 +4,6 @@ import { useResize } from "../NgayVietNamOThuySi";
 import { Link } from "react-router-dom";
 
 const NgayVietNamOBrazil = () => {
-  const [size, ref] = useResize();
   const tintuc = [
     {
       title: "Người dân Brazil nặn tò he hình quả bóng, say sưa xem võ cổ truyền Việt",
@@ -23,7 +22,7 @@ const NgayVietNamOBrazil = () => {
       title: "Thủ tướng Phạm Minh Chính dự Chương trình “Ngày Việt Nam tại Brazil”",
       description: "Dự Ngày Việt Nam tại Brazil, Thủ tướng Phạm Minh Chính kỳ vọng đây là khởi đầu cho giai đoạn hợp tác văn hóa nhiều hơn, mạnh mẽ hơn, sâu rộng hơn giữa hai nước",
       img: "18112024_1.jpg",
-      link: "https://vtv.vn/chinh-tri/thu-tuong-dua-hop-tac-van-hoa-viet-nam-brazil-sang-giai-doan-moi-20241118042509795.htm",
+      link: "https://doanhnghiepvn.vn/made-in-vietnam/san-pham/thu-tuong-chinh-phu-hoa-minh-vao-cac-hoat-dong-trong-ngay-viet-nam-tai-bra-xin-2024/20241120024736271",
     },
     {
       title: "Mỹ Latin và Trung Đông sẽ là điểm đến của Ngày Việt Nam ở nước ngoài 2024",
